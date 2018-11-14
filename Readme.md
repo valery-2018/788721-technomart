@@ -1,7 +1,7 @@
 ﻿# Личный проект «Техномарт»
 
 * Студент: [Потапов Валерий](https://up.htmlacademy.ru/htmlcss/23/user/788721).
-* Наставник: `[Юрий Зайцев](https://htmlacademy.ru/profile/yuryzaytsev)`.
+* Наставник: [Юрий Зайцев](https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 

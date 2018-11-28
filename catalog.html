@@ -19,16 +19,16 @@
           <h1 class="header-heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <a class="phone" href="#" >+7 (812) 555-05-55</a>
           <p class="our-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <section class="client-account">
+          <div class="client-account">
             <div class="client-account-login">
                 <a class="client-name" href="#">Равшан Джамшутович</a>
                 <a class="icon-exit" href="#"><span></span></a>
             </div>
-            <ul class="order-and-account"
+            <ul class="order-and-account">
                 <li><a class="btn-order" href="#" >Мои заказы</a></li>
                 <li><a class="btn-account" href="#">Личный кабинет</a></li>
             </ul>
-          </section>
+        </div>
         </div>
         <nav class="navi header-navi">
           <ul class="navi-top">
@@ -51,35 +51,36 @@
       </ul>
       <h2>Перфораторы</h2>
       <!-- Закрашено красным цветом -->
-      <div class="filters">
-        <form action="#" method="get">
-          <fildset class="makers">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
             <legend>Производители:</legend>
                 <ul>
-                    <li><input type="checkbox" checked id="bosh" name="maker">
+                    <li class="filter-option"><input type="checkbox" checked id="bosh" name="bosh">
                         <label for="bosh">bosh</label></li>
-                    <li><input type="checkbox" id="interskol" name="maker">
+                    <li class="filter-option"><input type="checkbox" id="interskol" name="interskol">
                         <label for="interskol">интерскол</label></li>
-                    <li><input type="checkbox" checked id="makita" name="maker">
+                    <li class="filter-option"><input type="checkbox" checked id="makita" name="makita">
                         <label for="makita">makita</label></li>
-                    <li><input type="checkbox" id="dewalt" name="maker">
+                    <li class="filter-option"><input type="checkbox" id="dewalt" name="dewalt">
                         <label for="dewalt">dewalt</label></li>
-                    <li><input type="checkbox" id="hitachi" name="maker">
+                    <li class="filter-option"><input type="checkbox" id="hitachi" name="hitachi">
                         <label for="hitachi">hitachi</label></li>
                 </ul>
-          </fildset>
-          <fildset class="groups">
+          </fieldset>
+          <fieldset>
             <legend>Питание:</legend>
             <ul>
-              <li><input type="radio" id="accumulator" name="power" value="accumulator">
-                  <label for="accumulator">....</label></li>
-              <li><input type="radio" checked id="power" name="power" value="power grid">
-                  <label for="power">....</label></li>
+              <li class="filter-option"><input type="radio" id="accumulator" name="power" value="accumulator">
+                  <label for="accumulator">аккумуляторные</label></li>
+              <li class="filter-option"><input type="radio" checked id="power" name="power" value="power grid">
+                  <label for="power">сетевые</label></li>
             </ul>
-         </fildset>
-         <li><input class="button" type="submit" name="show" value="Показать"></li>
+        </fieldset>
+         <input class="button" type="submit" name="show" value="Показать">
        </form>
-      </div>
+    </section>
       <div class="catalog">
         <ul class="catalog-list">
           <li class="catalog-card">
@@ -203,17 +204,19 @@
             <a class="card-title" href="#">
                 <h3>Перфоратор Bosch<br>BFG 2000"</h3>
                 <b class="new-price">12 500 р</b>
-            </a>        
+            </a>
           </li>
+        </ul>
+      </div>
           <!-- Закрашено красным цветом -->
-          <section class="buy">
+          <div class="buy">
               <form class="buy-continue" action="#" method="get">
                  <label><input class="item-in-cart" type="checkbox" name="in-cart" checked><span>Товар добавлен в корзину!</span></label>
                   <button class="button button-order" type="submit" name="order">оформить заказ</button>
                   <button class="button button-continue-shopping" type="submit" name="continue-shopping">продолжить покупки</button>
                 <button class="btn-close buy-close" type="button">x</button>
             </form>
-          </section>
+        </div>
     </main>
     <footer class="footer">
       <div class="footer-top">
@@ -238,6 +241,7 @@
             <li><a href="#">Инструмент</a></li>
             <li><a href="#">Спецпредложения</a></li>
           </ul>
+        </nav>
       </div>
       <div class="footer-bottom">
         <p class="copyright-company">&copy; 2010–2017 Компания «Техномарт»

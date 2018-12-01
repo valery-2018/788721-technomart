@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+ </head>
   </head>
   <body>
       <header class="header">
@@ -52,7 +55,6 @@
       <h2>Перфораторы</h2>
       <!-- Закрашено красным цветом -->
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Производители:</legend>
@@ -78,7 +80,7 @@
                   <label for="power">сетевые</label></li>
             </ul>
         </fieldset>
-         <input class="button" type="submit" name="show" value="Показать">
+         <input class="button btn-show" type="submit" name="show" value="Показать">
        </form>
     </section>
       <div class="catalog">
@@ -209,7 +211,7 @@
         </ul>
       </div>
           <!-- Закрашено красным цветом -->
-          <div class="buy">
+          <div class="buy-finish">
               <form class="buy-continue" action="#" method="get">
                  <label><input class="item-in-cart" type="checkbox" name="in-cart" checked><span>Товар добавлен в корзину!</span></label>
                   <button class="button button-order" type="submit" name="order">оформить заказ</button>
@@ -220,26 +222,26 @@
     </main>
     <footer class="footer">
       <div class="footer-top">
-        <nav class="navi futer-navi">
-          <a class="logo footer-logo" href="index.html">Техномарт</a>
+        <nav class="navi footer-navi">
+          <a class="logo footer-logo">Техномарт</a>
           <ul class="navi-top">
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Новости</a></li>
+            <li><a href="index.html">Компания</a></li>
+            <li><a href="index.html">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#delivery">Доставка</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="index.html">Доставка</a></li>
+            <li><a href="index.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
       <div class="footer-middle">
         <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <br>+7 (812) 555-05-55</p>
-        <nav class="navi futer-navi-middle">
+        <nav class="navi footer-navi-middle">
           <ul class="navi-middle">
-            <li><a href="#">Материалы</a></li>
-            <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="index.html">Материалы</a></li>
+            <li><a href="index.html">Техника</a></li>
+            <li><a href="index.html">Инструмент</a></li>
+            <li><a href="index.html">Спецпредложения</a></li>
           </ul>
         </nav>
       </div>
@@ -247,9 +249,9 @@
         <p class="copyright-company">&copy; 2010–2017 Компания «Техномарт»
           <br>Все права защищены</p>
           <ul class="social-buttons">
-            <li><a class="social network-button" href="#">Вконтакте</a></li>
-            <li><a class="social network-button" href="#">Фейсбук</a></li>
-            <li><a class="social network-button" href="#">Инстаграм</a></li>
+            <li><a class="social-btn icon-vk" href="#">Вконтакте</a></li>
+            <li><a class="social-btn-facebook" href="#">Фейсбук</a></li>
+            <li><a class="social-btn-instagram" href="#">Инстаграм</a></li>
           </ul>
           <div class="footer-copyright">
               <p class="copyright-email">Обратная связь:

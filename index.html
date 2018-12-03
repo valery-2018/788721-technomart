@@ -10,8 +10,8 @@
     <header class="header">
       <div class="header-top">
         <a class="logo header-logo">Техномарт</a>
-        <form class="search" action="#">
-          <input type="text" name="search" id="search-field" placeholder="Поиск:" >
+        <form class="search" action="https://echo.htmlacademy.ru">
+          <input type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="basket" href="#">Корзина: 0</a>
@@ -19,7 +19,7 @@
       </div>
       <div class="header-middle">
         <h1 class="header-heading">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
-        <a class="phone" href="#" >+7 (812) 555-05-55</a>
+        <a class="phone" href="tel:88125550555" >+7 (812) 555-05-55</a>
         <p class="our-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <ul class="client-navi">
           <li><a class="batton-enter">Войти </a></li>
@@ -28,7 +28,7 @@
       </div>
       <nav class="navi header-navi">
         <ul class="navi-top">
-          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html" aria-label="Главная">Главная</a></li>
           <li><a href="index.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="index.html">Новости</a></li>
@@ -62,12 +62,12 @@
       </section>
     </main>
     <div class="modal modal-map">
-      <p><img src="img/map_big.jpg" width="900" height="400" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-      <button class="btn-close map-close" type="button">x</button>
+      <img src="img/map_big.jpg" width="900" height="400" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <button class="btn-close map-close" type="button" aria-label="Закрыть"></button>
     </div>
 
     <div class="write-us">
-      <form class="write-us-form" action="#" method="post">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="data-and-letter">
           <label for="name">Ваше имя:</label>
           <input id="name" type="text" name="name" value="name" placeholder="Имя Фамилмя">
@@ -77,12 +77,15 @@
           <input id="e-mail" type="email" name="e-mail" value="e-mail" placeholder="e-mail@example.com">
         </p>
         <div class="data-and-letter mail">
-          <p>Текст письма:</p>
-          <p><textarea rows="6" cols="60" name="text" placeholder="В свободной форме"></textarea></p>
+          <!-- <p>Текст письма:</p> -->
+          <!-- <textarea rows="6" cols="60" name="text" placeholder="В свободной форме"></textarea> -->
+          <!--чем это лучше?-->
+          <label for="client-text">Текст письма:</label>
+          <textarea id="client-text" name="client-text" rows="4" cols="30" placeholder="В свободной форме" required=""></textarea>
         </div>
-        <button class="button btn-send" type="submit">отправить</button>
+        <button class="button btn-send" type="submit" name="submit" aria-label="Отправить">Отправить</button>
       </form>
-      <button class="btn-close write-us-close" type="button">x</button>
+      <button class="btn-close write-us-close" name="reset" type="reset" aria-label="Закрыть">Закрыть</button>
   </div>
 <!-- FOOTER -->
     <footer class="footer">
@@ -114,9 +117,9 @@
         <p class="copyright-company">&copy; 2010–2017 Компания «Техномарт»
           <br>Все права защищены</p>
           <ul class="social-buttons">
-            <li><a class="social-btn icon-vk" href="#">Вконтакте</a></li>
-            <li><a class="social-btn-facebook" href="#">Фейсбук</a></li>
-            <li><a class="social-btn-instagram" href="#">Инстаграм</a></li>
+              <li><a class="social-btn icon-vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
+              <li><a class="social-btn-facebook" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+              <li><a class="social-btn-instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
           </ul>
           <div class="footer-copyright">
               <p class="copyright-email">Обратная связь:

@@ -6,13 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css" >
  </head>
-  </head>
   <body>
       <header class="header">
         <div class="header-top">
           <a class="logo header-logo" href="#">Техномарт</a>
-          <form class="search" action="#">
-            <input type="text" name="search" id="search-field" placeholder="Поиск:" >
+          <form class="search" action="https://echo.htmlacademy.ru">
+            <input type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
           </form>
           <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="basket" href="#">Корзина: 0</a>
@@ -20,12 +19,12 @@
         </div>
         <div class="header-middle">
           <h1 class="header-heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-          <a class="phone" href="#" >+7 (812) 555-05-55</a>
+          <a class="phone" href="tel:88125550555" >+7 (812) 555-05-55</a>
           <p class="our-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <div class="client-account">
             <div class="client-account-login">
                 <a class="client-name" href="#">Равшан Джамшутович</a>
-                <a class="icon-exit" href="#"><span></span></a>
+                <a class="icon-exit" href="#"></a>
             </div>
             <ul class="order-and-account">
                 <li><a class="btn-order" href="#" >Мои заказы</a></li>
@@ -35,7 +34,7 @@
         </div>
         <nav class="navi header-navi">
           <ul class="navi-top">
-            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html" aria-label="Главная">Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Новости</a></li>
@@ -54,6 +53,7 @@
       </ul>
       <h2>Перфораторы</h2>
       <!-- Закрашено красным цветом -->
+      <h2 class="visually-hiden">Фильтры<h2>
       <section class="filters">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
@@ -75,7 +75,7 @@
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option"><input type="radio" id="accumulator" name="power" value="accumulator">
-                  <label for="accumulator">аккумуляторные</label></li>
+                  <label for="accumulator">Аккумуляторные</label></li>
               <li class="filter-option"><input type="radio" checked id="power" name="power" value="power grid">
                   <label for="power">сетевые</label></li>
             </ul>
@@ -212,12 +212,13 @@
       </div>
           <!-- Закрашено красным цветом -->
           <div class="buy-finish">
-              <form class="buy-continue" action="#" method="get">
-                 <label><input class="item-in-cart" type="checkbox" name="in-cart" checked><span>Товар добавлен в корзину!</span></label>
-                  <button class="button button-order" type="submit" name="order">оформить заказ</button>
-                  <button class="button button-continue-shopping" type="submit" name="continue-shopping">продолжить покупки</button>
-                <button class="btn-close buy-close" type="button">x</button>
-            </form>
+              <!-- <form class="buy-continue" action="https://echo.htmlacademy.ru" method="get"> -->
+                 <!-- <label><input class="item-in-cart" type="checkbox" name="in-cart" checked><span>Товар добавлен в корзину!</span></label> -->
+                  <h2>Товар добавлен в корзину!</h2>
+                  <a class="order" href="#">Оформить заказ</a>
+                  <a class="continue-shopping">Продолжить покупки</a>
+                <button class="btn-close buy-close" type="button" aria-label="Закрыть">Закрыть</button>
+            <!-- </form> -->
         </div>
     </main>
     <footer class="footer">
@@ -249,9 +250,9 @@
         <p class="copyright-company">&copy; 2010–2017 Компания «Техномарт»
           <br>Все права защищены</p>
           <ul class="social-buttons">
-            <li><a class="social-btn icon-vk" href="#">Вконтакте</a></li>
-            <li><a class="social-btn-facebook" href="#">Фейсбук</a></li>
-            <li><a class="social-btn-instagram" href="#">Инстаграм</a></li>
+            <li><a class="social-btn icon-vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
+            <li><a class="social-btn-facebook" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+            <li><a class="social-btn-instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
           </ul>
           <div class="footer-copyright">
               <p class="copyright-email">Обратная связь:

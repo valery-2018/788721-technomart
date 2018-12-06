@@ -40,7 +40,7 @@ a.logo {
     font-family:inherit;
     text-transform: uppercase;
     background-color: #ed3543;
-    border-bottom: 5px solid #b42833;
+    box-shadow: 0 0 0 5px #b42833;
     }
 a.logo:hover {
     background-color: #ca2b36;
@@ -55,6 +55,7 @@ a.logo:active {
     line-height: 18px;
     color: #ffffff;
     background-color: #293349;
+    border: none;
     }
 .header-top input[type="text"]:hover {
     background-color: #212939;
@@ -396,4 +397,15 @@ label {
 }
 .buy-finish {
   display: none;
+}
+/*Сеточные стили*/
+html,
+body {
+  min-width: 1200px;
+  min-height: 3150px;
+}
+
+.header-top {
+    background-color: #293349;
+    display: flex;
 }

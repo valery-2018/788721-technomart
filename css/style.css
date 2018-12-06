@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 20px;
   padding: 0;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -9,6 +9,8 @@ body {
   text-transform: none;
   background-color: #ffffff;
   background-position: top center;
+  width: 1200px;
+  min-height: 3150px;
 }
 a {
   text-decoration: none;
@@ -31,8 +33,20 @@ li {
 }
 
 /*стили HEADER*/
-
+.wrapper-header-top {
+  background-color: #293349;
+  outline: 2px solid red;   /*центровщик*/
+  display: flex;
+  justify-content: center;
+}
+.header-top {
+  width: 940px;
+  display: flex;
+  outline: 4px solid yellow;   /*центровщик*/
+}
 a.logo {
+  width:220px;
+  text-align: center;
     font-family: inherit;
     font-size: 24px;
     line-height: 24px;
@@ -40,7 +54,8 @@ a.logo {
     font-family:inherit;
     text-transform: uppercase;
     background-color: #ed3543;
-    box-shadow: 0 0 0 5px #b42833;
+    box-shadow: 0 5px 0 0 #b42833;
+    padding-top: 13px;
     }
 a.logo:hover {
     background-color: #ca2b36;
@@ -63,8 +78,21 @@ a.logo:active {
 .header-top input[type="text"]:focus {
     background-color: #ffffff;
     }
+.header-top input::placeholder {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  padding-left: 49px;
+  padding-top: 14px;
+}
+/**/
+
 .header-top a.bookmarks,
 .header-top a.basket {
+  padding-top: 14px;
+    width: 150px;
+    text-align: center;
     font-family: inherit;
     font-size: 17px;
     line-height: 18px;
@@ -81,6 +109,9 @@ a.logo:active {
     color: #8b8e94;
 }
 .header-top a.button-order {
+  width: 150px;
+  text-align: center;
+  padding-top: 14px;
     font-family: inherit;
     font-size: 17px;
     line-height: 18px;
@@ -401,11 +432,5 @@ label {
 /*Сеточные стили*/
 html,
 body {
-  min-width: 1200px;
-  min-height: 3150px;
-}
 
-.header-top {
-    background-color: #293349;
-    display: flex;
 }

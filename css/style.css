@@ -31,20 +31,37 @@ li {
 .footer-bottom {
   background-color: #293349;
 }
-
 /*стили HEADER*/
+/*-------------------------------------------------------*/
 .wrapper-header-top {
   background-color: #293349;
   outline: 2px solid red;   /*центровщик*/
   display: flex;
   justify-content: center;
+  min-heigt: 42px;
 }
 .header-top {
   width: 940px;
   display: flex;
   outline: 4px solid yellow;   /*центровщик*/
 }
+/*-------------------------------------------------------*/
+.wrapper-header-middle {
+  justify-content: center;
+  display: flex;
+  outline: 2px solid red;
+  min-heigt: 160px;   /*центровщик*/
+}
+.header-middle {
+  width: 940px;
+  display: flex;
+  outline: 4px solid yellow;   /*центровщик*/
+}
+/*-------------------------------------------------------*/
+
+
 a.logo {
+
   width:220px;
   text-align: center;
     font-family: inherit;
@@ -71,6 +88,7 @@ a.logo:active {
     color: #ffffff;
     background-color: #293349;
     border: none;
+    padding-left: 49px;
     }
 .header-top input[type="text"]:hover {
     background-color: #212939;
@@ -126,17 +144,30 @@ a.logo:active {
     color: #8b8e94;
     }
 .header-middle h1.header-heading {
+    display: block;
     font-family: inherit;
     font-size: 16px;
     font-style: italic;
     color: #ee3643;
     font-weight: 400;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.header-middle .phone-address {
+    margin-left:75px;
+    padding: 0;
+    padding-top: 46px;
 }
 .header-middle a.phone {
+    /*display: block;*/
+    /*width: 270px;*/
     font-family: inherit;
     font-size: 21px;
+    line-height:22px;
     color: #ee3643;
     font-weight: 400;
+    border: 3px solid #ffffff;
+    padding: 10px 50px 10px 70px;
 }
 .header-middle p.our-address {
     font-family: inherit;

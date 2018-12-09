@@ -40,11 +40,7 @@ li {
   justify-content: center;
   min-heigt: 42px;
 }
-.header-top {
-  width: 940px;
-  display: flex;
-  outline: 4px solid yellow;   /*центровщик*/
-}
+
 /*-------------------------------------------------------*/
 .wrapper-header-middle {
   justify-content: center;
@@ -52,14 +48,27 @@ li {
   outline: 2px solid red;
   min-heigt: 160px;   /*центровщик*/
 }
-.header-middle {
+
+/*-------------------------------------------------------*/
+.header-navi {/*центровщик*/
+  justify-content: center;
+  display: flex;
+  outline: 2px solid red;
+  min-height: 120px;   /*центровщик*/
+}
+
+/*---------------------------------------------------------*/
+.wrapper-center-about {/*центровщик*/
+  justify-content: center;
+  display: flex;
+  outline: 2px solid red;
+  min-height: 536px;   /*центровщик*/
+}
+/*---------------------------------------------------------*/
+.header-top {
   width: 940px;
   display: flex;
-  outline: 4px solid yellow;   /*центровщик*/
-}
-/*-------------------------------------------------------*/
-
-
+  outline: 4px solid yellow;}
 a.logo {
 
   width:220px;
@@ -143,8 +152,20 @@ a.logo:active {
     background-color: #508534;
     color: #8b8e94;
     }
+    /*---------------------------------------------*/
+    .header-middle {
+      margin: 0;
+      padding: 0;
+      width: 940px;
+      display: flex;
+      /*justify-content: space-between;*/
+      align-items: flex-start;
+      outline: 4px solid yellow;
+    }
 .header-middle h1.header-heading {
-    display: block;
+  margin: 0;
+  padding: 0;
+    display: flex;
     font-family: inherit;
     font-size: 16px;
     font-style: italic;
@@ -152,22 +173,54 @@ a.logo:active {
     font-weight: 400;
     padding-top: 50px;
     padding-left: 50px;
+    padding-bottom: 45px;
+    outline: 2px solid blue;
+    width: 320px;
 }
 .header-middle .phone-address {
-    margin-left:75px;
-    padding: 0;
-    padding-top: 46px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  outline: 2px solid blue;
+  width: 330px;
+  padding-top: 48px;
+    /*margin-left:75px;*/
+    /*padding: 0;*/
+    /*padding-top: 46px;*/
 }
+
 .header-middle a.phone {
-    /*display: block;*/
+    display: block;
     /*width: 270px;*/
+    margin: 0;
+    padding: 0;
+    position: relative;
     font-family: inherit;
     font-size: 21px;
-    line-height:22px;
+    line-height:26px;
     color: #ee3643;
     font-weight: 400;
     border: 3px solid #ffffff;
     padding: 10px 50px 10px 70px;
+
+}
+.header-middle a.phone::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 19px;
+  height: 19px;
+
+  background-image: url("img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*opacity: 0.3;*/
 }
 .header-middle p.our-address {
     font-family: inherit;
@@ -176,14 +229,37 @@ a.logo:active {
     font-weight: 400;
     line-height: 24px;
     text-align: center;
+    padding-left: 10px;
+    /*align-self: center;*/
 }
+.header-middle .client-navi {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 48px;
+  outline: 2px solid blue;
+  /*margin-bottom: 70px;*/
+  width: 282px;
+  /*box-sizing: border-box;*/
+}
+
 .header-middle .client-navi a.batton-enter,
 .header-middle .client-navi a.batton-registration {
+    display: block;
     font-family: inherit;
     font-size: 21px;
+    line-height:26px;
     color: #000000;
     font-weight: 400;
     background-color: #ffffff;
+    padding: 12px 20px 12px 20px;
+}
+.header-middle .client-navi a.batton-enter {
+  padding-left: 50px;
+}
+.header-middle .client-navi a.batton-registration {
+    margin-left: 10px;
 }
 .header-middle .client-navi a.batton-enter:hover,
 .header-middle .client-navi a.batton-registration:hover {
@@ -195,6 +271,21 @@ a.logo:active {
     color: #c5c5c5;
     background-color: #ffffff;
 }
+/*--------------------------------------------------------*/
+/*---------------------------------------------*/
+.navi-top {
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  display: flex;
+  justify-content: center;
+  outline: 4px solid yellow;
+  justify-content: space-between;
+
+  }
+
+  /*align-items: flex-start;*/
+
 .header-navi li:nth-child(1) a,
 .header-navi li:nth-child(2) a,
 .header-navi li:nth-child(3) a,
@@ -202,11 +293,17 @@ a.logo:active {
 .header-navi li:nth-child(5) a,
 .header-navi li:nth-child(6) a,
 .header-navi li:nth-child(7) a {
+  display:inline-block;
     font-family: inherit;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
     background-color: #31415b;
+    width: 134px;
+    text-align: center;
+    padding-top:18px;
+    padding-bottom: 18px;
+    box-shadow: 0 5px 0 0 #293349;
 }
 .header-navi li:nth-child(1) a:hover,
 .header-navi li:nth-child(2) a:hover,
@@ -228,6 +325,11 @@ a.logo:active {
     color: #8b8e94;
 }
 /*стили MAIN*/
+.company-contacts {
+  width: 940px;
+  display: flex;
+  outline: 4px solid yellow;}
+}
 .company h2,
 .contacts h2 {
     text-transform: uppercase;
@@ -266,6 +368,10 @@ a.logo:active {
     display: none;
 }
 /*стили FOOTER*/
+.navi-up {
+  margin:0;
+  padding:0;
+}
 .footer-navi li:nth-child(1) a,
 .footer-navi li:nth-child(2) a,
 .footer-navi li:nth-child(3) a,
@@ -290,6 +396,10 @@ a.logo:active {
 .footer-navi li:nth-child(4) a:active,
 .footer-navi li:nth-child(5) a:active {
     color: #919ba9;
+}
+.navi-middle {
+  margin:0;
+  padding:0;
 }
 .footer-navi-middle li:nth-child(1) a,
 .footer-navi-middle li:nth-child(2) a,

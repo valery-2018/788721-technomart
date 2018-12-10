@@ -68,7 +68,8 @@ li {
 .header-top {
   width: 940px;
   display: flex;
-  outline: 4px solid yellow;}
+  outline: 4px solid yellow;
+  }
 a.logo {
 
   width:220px;
@@ -280,7 +281,7 @@ a.logo:active {
   display: flex;
   justify-content: center;
   outline: 4px solid yellow;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 
   }
 
@@ -328,59 +329,137 @@ a.logo:active {
 .company-contacts {
   width: 940px;
   display: flex;
-  outline: 4px solid yellow;}
-}
+  justify-content: space-between;
+  outline: 4px solid yellow;
+  height: 368px;
+  }
+
 .company h2,
 .contacts h2 {
     text-transform: uppercase;
     font-family: inherit;
     font-size: 30px;
-    line-height: 32px;
+    /*line-height: 10px;*/
     color: #000000;
+    /*display: block;*/
+    /*margin-bottom: -15px;*/
+    margin: 0;
+    padding: 0;
 }
 .company p,
 .contacts p {
     text-transform: none;
     font-family: PT Sans;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 18px;
     font-weight: 400;
     color: #000000;
+    display: block;
+    padding-bottom: 0px;
+    margin: 0;
+    padding: 0;
+}
+.company ul {
+    margin: 0;
+    padding: 0;
+    /*display: block;*/
 }
 .company li {
     text-transform: none;
     font-family: inherit;
     font-size: 18px;
-    line-height: 38px;
+    line-height: 40px;
     color: #000000;
 }
 .company a.batton-about-company,
 .contacts a.batton-email {
+    display: table-cell;
+    /*display: inline-block;*/
+    height: 38px;
+    text-align: center;
+    vertical-align: middle;
     text-transform: uppercase;
     font-family: inherit;
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
     background-color: #ed3543;
+    border-radius: 2px;
 }
+.company a.batton-about-company {
+    width: 220px;
+}
+.contacts a.batton-email {
+    width: 300px;
+}
+.map {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*-------------------------------------------*/
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: 2px solid blue;
+    width: 540px;
+    /*height: 368px;*/
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: 2px solid blue;
+    width:300px;
+    /*height: 368px;*/
+}
+
+/*------------------------------------------*/
 .modal-map,
 .write-us {
     display: none;
 }
 /*стили FOOTER*/
-.navi-up {
-  margin:0;
-  padding:0;
+ .footer-top {
+    display: flex;
+    justify-content: center;
+    outline: 2px solid red;
+    min-heigt: 63px;   /*центровщик*/
 }
+.footer-navi {
+    width: 940px;
+    display: flex;
+    outline: 4px solid yellow;
+    justify-content: space-between;
+}
+.footer-logo {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.navi-up {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: flex-end;
+}
+/*------------------------------------------------------*/
+
 .footer-navi li:nth-child(1) a,
 .footer-navi li:nth-child(2) a,
 .footer-navi li:nth-child(3) a,
 .footer-navi li:nth-child(4) a,
 .footer-navi li:nth-child(5) a {
+    display: inline-block;
     font-family: inherit;
     font-size: 18px;
     line-height: 20px;
     color:#ffffff;
+    width: 110px;
+    text-align: right;
+    padding-top:42px;
+    padding-bottom: 8px;
     background-color: #31415b;
 }
 .footer-navi li:nth-child(1) a:hover,

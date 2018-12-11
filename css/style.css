@@ -8,7 +8,6 @@ body {
   color: #000000;
   text-transform: none;
   background-color: #ffffff;
-  background-position: top center;
   width: 1200px;
   min-height: 3150px;
 }
@@ -22,7 +21,7 @@ li {
   background-color: #f3f7f8;
 }
 .mine {
-  background-color: inherit;
+  background-color: #ffffff;
 }
 .footer-top,
 .footer-middle {
@@ -83,7 +82,7 @@ a.logo {
 
   width:220px;
   text-align: center;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 24px;
     line-height: 24px;
     color: #ffffff;
@@ -100,7 +99,7 @@ a.logo:active {
     }
 .header-top input[type="text"],
 .header-top input[type="text"]:active {
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -115,7 +114,7 @@ a.logo:active {
     background-color: #ffffff;
     }
 .header-top input::placeholder {
-  font-family: inherit;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -129,7 +128,7 @@ a.logo:active {
   padding-top: 14px;
     width: 150px;
     text-align: center;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -148,7 +147,7 @@ a.logo:active {
   width: 150px;
   text-align: center;
   padding-top: 14px;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -176,7 +175,7 @@ a.logo:active {
   margin: 0;
   padding: 0;
     display: flex;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
     font-style: italic;
     color: #ee3643;
@@ -208,7 +207,7 @@ a.logo:active {
     margin: 0;
     padding: 0;
     position: relative;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height:26px;
     color: #ee3643;
@@ -233,7 +232,7 @@ a.logo:active {
   /*opacity: 0.3;*/
 }
 .header-middle p.our-address {
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     color: #32425c;
     font-weight: 400;
@@ -257,7 +256,7 @@ a.logo:active {
 .header-middle .client-navi a.batton-enter,
 .header-middle .client-navi a.batton-registration {
     display: block;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height:26px;
     color: #000000;
@@ -306,7 +305,7 @@ a.logo:active {
 .header-navi li:nth-child(6) a,
 .header-navi li:nth-child(7) a {
   display:inline-block;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -350,7 +349,7 @@ a.logo:active {
 .company h2,
 .contacts h2 {
     text-transform: uppercase;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     /*line-height: 10px;*/
     color: #000000;
@@ -362,7 +361,7 @@ a.logo:active {
 .company p,
 .contacts p {
     text-transform: none;
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -379,7 +378,7 @@ a.logo:active {
 }
 .company li {
     text-transform: none;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 40px;
     color: #000000;
@@ -392,7 +391,7 @@ a.logo:active {
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
@@ -465,7 +464,7 @@ a.footer-logo {
 
 
   /*text-align: center;*/
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     /*line-height: 30px;*/
     /*color: #ffffff;*/
@@ -483,7 +482,7 @@ a.footer-logo {
 .footer-navi li:nth-child(4) a,
 .footer-navi li:nth-child(5) a {
     display: inline-block;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
     color:#ffffff;
@@ -515,7 +514,7 @@ a.footer-logo {
 .footer-navi-middle li:nth-child(2) a,
 .footer-navi-middle li:nth-child(3) a,
 .footer-navi-middle li:nth-child(4) a {
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
     color:#ffd180;
@@ -536,7 +535,7 @@ a.footer-logo {
 .footer-middle>.address {
     display: inline-block;
     text-transform: none;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
     color: #ffffff;
@@ -546,7 +545,7 @@ a.footer-logo {
 .footer-copyright>p {
     display: inline-block;
     text-transform: none;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -567,7 +566,7 @@ a.footer-logo {
 
 /*страница - CATALOG*/
 .client-account-login>.client-name {
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     color: #000000;
     font-weight: 400;
@@ -595,7 +594,7 @@ a.footer-logo {
 .breadcrumbs li:nth-child(3) a,
 .breadcrumbs li:nth-child(4) {
     text-transform: uppercase;
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 15px;
     font-weight: 400;
@@ -604,7 +603,7 @@ a.footer-logo {
 .main h2 {
     text-transform: uppercase;
     color: #32425c;
-    font-family: inherit;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
 }
@@ -614,7 +613,7 @@ fieldset {
 legend {
   text-transform: uppercase;
   color: #000000;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -630,7 +629,7 @@ label {
 .filter input[value="Показать"] {
   text-transform: uppercase;
   color: #000000;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
@@ -638,7 +637,7 @@ label {
 .catalog-card a.buy {
   text-transform: uppercase;
   color: #ffffff;
-  font-family: inherit;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -647,7 +646,7 @@ label {
 .catalog-card a.in-bookmark {
   text-transform: uppercase;
   color: #3c4b64;
-  font-family: inherit;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -656,14 +655,14 @@ label {
 .catalog h3 {
   text-transform: none;
   color: #000000;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
 }
 .catalog .card-title .old-price {
   color: #999999;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -671,7 +670,7 @@ label {
 }
 .catalog .card-title .new-price {
   color: #ffffff;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;

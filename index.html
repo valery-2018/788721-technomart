@@ -8,7 +8,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper-header-top"> <!--обертка для фона и центровщика -->
+        <!--обертка для фона и центровщика -->
+      <div class="wrapper-header-top">
          <div class="header-top">
             <a class="logo header-logo">Техномарт</a>
             <form class="search" action="https://echo.htmlacademy.ru">
@@ -18,8 +19,10 @@
             <a class="basket" href="#">Корзина: 10</a>
             <a class="button button-order" href="#">Оформить заказ</a>
         </div>
-    </div><!--обертка для фона и центровщика-->
-    <div class="wrapper-header-middle"><!--  обертка центровщика -->
+    </div>
+    <!-- --------------------------------------------------- -->
+    <!--обертка для центровщика-->
+    <div class="wrapper-header-middle">
       <div class="header-middle">
         <h1 class="header-heading">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
         <ul class="phone-address">
@@ -31,7 +34,9 @@
           <li><a class="batton-registration">Регистрация</a></li>
         </ul>
       </div>
-    </div> <!-- обертка для центровщика -->
+    </div>
+    <!-- --------------------------------------------------- -->
+    <!-- обертка для центровщика -->
       <nav class="navi header-navi">
         <ul class="navi-top">
           <li><a href="index.html">Главная</a></li>
@@ -43,9 +48,11 @@
           <li><a href="index.html">Контакты</a></li>
         </ul>
       </nav>
+      <!-- --------------------------------------------------- -->
     </header>
     <main class="main">
       <!-- Закрашено красным цветом -->
+      <!-- обертка для центровщика -->
       <div class="wrapper-center-about">
         <div class="company-contacts">
           <section class="company">
@@ -72,34 +79,34 @@
           </section>
         </div>
       </div>
+      <!-- --------------------------------------------------- -->
     </main>
-    <!-- ------------------------------------------------- -->
     <div class="modal modal-map">
-      <img src="img/map_big.jpg" width="900" height="400" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <button class="btn-close map-close" type="button" aria-label="Закрыть"></button>
+        <img src="img/map_big.jpg" width="900" height="400" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <button class="btn-close map-close" type="button" aria-label="Закрыть"></button>
     </div>
 
     <div class="write-us">
-      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="write-us-form"             action="https://echo.htmlacademy.ru" method="post">
         <p class="data-and-letter">
-          <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" value="name" placeholder="Имя Фамилмя">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" value="name" placeholder="Имя Фамилмя">
         </p>
         <p class="data-and-letter">
-          <label for="e-mail">Ваш e-mail:</label>
-          <input id="e-mail" type="email" name="e-mail" value="e-mail" placeholder="e-mail@example.com">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input id="e-mail" type="email" name="e-mail" value="e-mail" placeholder="e-mail@example.com">
         </p>
         <div class="data-and-letter mail">
-          <!-- <p>Текст письма:</p> -->
-          <!-- <textarea rows="6" cols="60" name="text" placeholder="В свободной форме"></textarea> -->
-          <!--чем это лучше?-->
-          <label for="client-text">Текст письма:</label>
-          <textarea id="client-text" name="client-text" rows="4" cols="30" placeholder="В свободной форме" required=""></textarea>
+            <!-- <p>Текст письма:</p> -->
+            <!-- <textarea rows="6" cols="60" name="text" placeholder="В свободной форме"></textarea> -->
+            <!--чем это лучше?-->
+            <label for="client-text">Текст письма:</label>
+            <textarea id="client-text" name="client-text" rows="4" cols="30" placeholder="В свободной форме" required=""></textarea>
         </div>
         <button class="button btn-send" type="submit" name="submit" aria-label="Отправить">Отправить</button>
       </form>
       <button class="btn-close write-us-close" name="reset" type="reset" aria-label="Закрыть">Закрыть</button>
-  </div>
+    </div>
 <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-top">

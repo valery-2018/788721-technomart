@@ -31,44 +31,53 @@ li {
 .footer-bottom {
   background-color: #293349;
 }
-/*стили HEADER*/
+
 /*-------------------------------------------------------*/
-.wrapper-header-top {
+.wrapper-header-top {/*центровщик*/
   background-color: #293349;
-  outline: 2px solid red;   /*центровщик*/
   display: flex;
   justify-content: center;
-  min-heigt: 42px;
+  outline: 2px solid red;
+  /*min-heigt: 42px;*/
 }
 
 /*-------------------------------------------------------*/
-.wrapper-header-middle {
-  justify-content: center;
+.wrapper-header-middle {/*центровщик*/
   display: flex;
+  justify-content: center;
   outline: 2px solid red;
-  min-heigt: 160px;   /*центровщик*/
+  /*min-heigt: 160px;*/
 }
 
 /*-------------------------------------------------------*/
 .header-navi {/*центровщик*/
-  justify-content: center;
   display: flex;
+  justify-content: center;
   outline: 2px solid red;
-  min-height: 120px;   /*центровщик*/
+  /*min-height: 120px;*/
 }
 
 /*---------------------------------------------------------*/
 .wrapper-center-about {/*центровщик*/
-  justify-content: center;
   display: flex;
+  justify-content: center;
   outline: 2px solid red;
-  min-height: 536px;   /*центровщик*/
 }
 /*---------------------------------------------------------*/
+.footer-top {/*центровщик*/
+   display: flex;
+   justify-content: center;
+   outline: 2px solid red;
+}
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*стили HEADER*/
+
 .header-top {
   width: 940px;
+  min-heigt: 42px;
   display: flex;
-  outline: 4px solid yellow;
+  outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
   }
 a.logo {
 
@@ -78,7 +87,6 @@ a.logo {
     font-size: 24px;
     line-height: 24px;
     color: #ffffff;
-    font-family:inherit;
     text-transform: uppercase;
     background-color: #ed3543;
     box-shadow: 0 5px 0 0 #b42833;
@@ -158,10 +166,11 @@ a.logo:active {
       margin: 0;
       padding: 0;
       width: 940px;
+      min-heigt: 160px;
       display: flex;
       /*justify-content: space-between;*/
       align-items: flex-start;
-      outline: 4px solid yellow;
+      outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
     }
 .header-middle h1.header-heading {
   margin: 0;
@@ -175,7 +184,7 @@ a.logo:active {
     padding-top: 50px;
     padding-left: 50px;
     padding-bottom: 45px;
-    outline: 2px solid blue;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
     width: 320px;
 }
 .header-middle .phone-address {
@@ -185,7 +194,7 @@ a.logo:active {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  outline: 2px solid blue;
+  outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
   width: 330px;
   padding-top: 48px;
     /*margin-left:75px;*/
@@ -239,7 +248,7 @@ a.logo:active {
   display: flex;
   justify-content: flex-end;
   padding-top: 48px;
-  outline: 2px solid blue;
+  outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
   /*margin-bottom: 70px;*/
   width: 282px;
   /*box-sizing: border-box;*/
@@ -273,14 +282,16 @@ a.logo:active {
     background-color: #ffffff;
 }
 /*--------------------------------------------------------*/
-/*---------------------------------------------*/
+
 .navi-top {
   margin: 0;
   padding: 0;
   width: 940px;
+  min-height: 60px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  outline: 4px solid yellow;
+  outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
   /*justify-content: space-between;*/
 
   }
@@ -325,13 +336,15 @@ a.logo:active {
     background-color: #1d2639;
     color: #8b8e94;
 }
+/*--------------------------------------------------------*/
 /*стили MAIN*/
 .company-contacts {
   width: 940px;
+  height: 368px;
+  margin-bottom: 87px;
   display: flex;
   justify-content: space-between;
-  outline: 4px solid yellow;
-  height: 368px;
+  outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
   }
 
 .company h2,
@@ -398,19 +411,21 @@ a.logo:active {
 }
 /*-------------------------------------------*/
 .company {
+    width: 540px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 2px solid blue;
-    width: 540px;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+
     /*height: 368px;*/
 }
 .contacts {
+    width:300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 2px solid blue;
-    width:300px;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+
     /*height: 368px;*/
 }
 
@@ -420,31 +435,47 @@ a.logo:active {
     display: none;
 }
 /*стили FOOTER*/
- .footer-top {
-    display: flex;
-    justify-content: center;
-    outline: 2px solid red;
-    min-heigt: 63px;   /*центровщик*/
-}
+
 .footer-navi {
     width: 940px;
+    min-heigt: 63px;
     display: flex;
-    outline: 4px solid yellow;
+    outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
     justify-content: space-between;
 }
+
 .footer-logo {
-    display: flex;
+    width: 220px;
+    /*display: flex;*/
     padding-top: 20px;
-    padding-left: 40px;
+    padding-left: 42px;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
+
 
 .navi-up {
     margin:0;
     padding:0;
     display: flex;
     justify-content: flex-end;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 /*------------------------------------------------------*/
+a.footer-logo {
+
+
+  /*text-align: center;*/
+    font-family: inherit;
+    font-size: 30px;
+    /*line-height: 30px;*/
+    /*color: #ffffff;*/
+    /*font-family:inherit;*/
+    /*text-transform: uppercase;*/
+    /*background-color: #ed3543;*/
+    /*box-shadow: 0 5px 0 0 #b42833;*/
+    padding-top: 20px;
+    padding-left: 42px;
+    }
 
 .footer-navi li:nth-child(1) a,
 .footer-navi li:nth-child(2) a,

@@ -29,7 +29,8 @@ a {
 .order-and-account,
 .breadcrumbs,
 .filters ul,
-.catalog-list {
+.catalog-list,
+.block-footer-logo  {
 
     list-style: none;
 }
@@ -447,14 +448,13 @@ a {
     justify-content: space-between;
 }
 
-.footer-logo {
+.block-footer-logo {
     margin:0;
     padding:0;
     width:220px;
-    /*display: flex;*/
-    padding-top: 20px;
-    padding-left: 42px;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+
+    display: flex;
+    outline: 10px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 
 
@@ -462,24 +462,24 @@ a {
     margin:0;
     padding:0;
     display: flex;
-    justify-content: flex-end;
+    /justify-content: flex-end;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 /*------------------------------------------------------*/
-.footer-logo {
-
-
-  /*text-align: center;*/
+.block-footer-logo a {
+  display: inline-block;
+width: 220px;
+min-height: 63px;
+  text-align: center;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
-    /*line-height: 30px;*/
-    /*color: #ffffff;*/
-    /*font-family:inherit;*/
-    /*text-transform: uppercase;*/
-    /*background-color: #ed3543;*/
-    /*box-shadow: 0 5px 0 0 #b42833;*/
-    /*padding-top: 20px;*/
-    /*padding-left: 42px;*/
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #ed3543;
+    box-shadow: 0 5px 0 0 #b42833;
+    padding-top: 20px;
+    /padding-left: 42px;
 }
 /*-------------------------------------------------------------*/
 .navi-up a {

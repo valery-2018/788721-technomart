@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -9,17 +9,17 @@
   <body>
       <header class="header">
           <!--обертка для фона и центровщика -->
-        <div class="wrapper-header-top">
-        <div class="header-top">
-          <a class="logo header-logo" href="#">Техномарт</a>
-          <form class="search" action="https://echo.htmlacademy.ru">
-            <input type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
-          </form>
-          <a class="bookmarks" href="#">Закладки: 0</a>
-          <a class="basket" href="#">Корзина: 0</a>
-          <a class="button button-order" href="#">Оформить заказ</a>
+          <div class="wrapper-header-top">
+             <div class="header-top">
+                <a class="logo header-logo" href="">Техномарт</a>
+                <form class="search" action="https://echo.htmlacademy.ru">
+                  <input class="input-search" style="height:42px; width:270px" type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
+                </form>
+                <a class="bookmarks" href="#">Закладки: 0</a>
+                <a class="basket" href="#">Корзина: 10</a>
+                <a class="button button-order" href="#">Оформить заказ</a>
+            </div>
         </div>
-      </div>
       <!-- --------------------------------------------------- -->
       <!--обертка для центровщика-->
       <div class="wrapper-header-middle">
@@ -61,33 +61,33 @@
         <li><a href="tools.html">Инструмент</a></li>
         <li class="crumbs-current">Перфораторы</li>
       </ul>
-      <h2>Перфораторы</h2>
+      <h2 class="perforatory">Перфораторы</h2>
       <!-- Закрашено красным цветом -->
       <section class="filters">
         <h2 class="visually-hiden">Фильтры<h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Производители:</legend>
+          <fieldset class="fieldset">
+            <legend class="legend">Производители:</legend>
                 <ul>
                     <li class="filter-option"><input type="checkbox" checked id="bosh" name="bosh">
-                        <label for="bosh">bosh</label></li>
+                        <label class="label" for="bosh">bosh</label></li>
                     <li class="filter-option"><input type="checkbox" id="interskol" name="interskol">
-                        <label for="interskol">интерскол</label></li>
+                        <label class="label" for="interskol">интерскол</label></li>
                     <li class="filter-option"><input type="checkbox" checked id="makita" name="makita">
-                        <label for="makita">makita</label></li>
+                        <label class="label" for="makita">makita</label></li>
                     <li class="filter-option"><input type="checkbox" id="dewalt" name="dewalt">
-                        <label for="dewalt">dewalt</label></li>
+                        <label class="label" for="dewalt">dewalt</label></li>
                     <li class="filter-option"><input type="checkbox" id="hitachi" name="hitachi">
-                        <label for="hitachi">hitachi</label></li>
+                        <label class="label" for="hitachi">hitachi</label></li>
                 </ul>
           </fieldset>
-          <fieldset>
-            <legend>Питание:</legend>
+          <fieldset class="fieldset">
+            <legend class="legend">Питание:</legend>
             <ul>
               <li class="filter-option"><input type="radio" id="accumulator" name="power" value="accumulator">
-                  <label for="accumulator">Аккумуляторные</label></li>
+                  <label class="label" for="accumulator">Аккумуляторные</label></li>
               <li class="filter-option"><input type="radio" checked id="power" name="power" value="power grid">
-                  <label for="power">сетевые</label></li>
+                  <label class="label" for="power">сетевые</label></li>
             </ul>
         </fieldset>
          <input class="button btn-show" type="submit" name="show" value="Показать">

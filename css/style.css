@@ -1,6 +1,6 @@
 body {
 
-    margin: 20px;
+    /*margin: 20px;*/
     padding: 0;
 
     font-family: "Cuprum", Arial, sans-serif;
@@ -9,8 +9,8 @@ body {
     color: #000000;
     text-transform: none;
     background-color: #ffffff;
-    width: 1200px;
-    min-height: 3150px;
+    /*width: 1200px;*/
+
 }
 a {
     text-decoration: none;
@@ -181,11 +181,11 @@ a {
     color: #8b8e94;
 }
     /*---------------------------------------------*/
-    .header-middle {
+.header-middle {
     margin: 0;
     padding: 0;
     width: 940px;
-    min-heigt: 160px;
+    min-height: 160px;
     display: flex;
     /*justify-content: space-between;*/
     align-items: flex-start;
@@ -388,9 +388,10 @@ a {
 }
 .company .batton-about-company,
 .contacts .batton-email {
-    display: table-cell;
+    display: table-cell;/*центрует текст по высоте (позволяет работать vertical-align )*/
     /*display: inline-block;*/
-    height: 38px;
+    /*height: 38px;*/
+    max-width: 87px;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -400,6 +401,8 @@ a {
     color: #ffffff;
     background-color: #ed3543;
     border-radius: 2px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 .company .batton-about-company {
     width: 220px;
@@ -442,7 +445,7 @@ a {
 
 .footer-navi {
     width: 940px;
-    min-heigt: 63px;
+    /*min-heigt: 63px;*/
     display: flex;
     outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
     justify-content: space-between;
@@ -451,7 +454,7 @@ a {
 .block-footer-logo {
     margin:0;
     padding:0;
-    width:220px;
+    /*width:220px;*/
 
     display: flex;
     outline: 10px solid blue;/*визуализатор блоков 3-й уровень*/
@@ -469,7 +472,7 @@ a {
 .block-footer-logo a {
   display: inline-block;
 width: 220px;
-min-height: 63px;
+/*min-height: 63px;*/
   text-align: center;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
@@ -478,8 +481,8 @@ min-height: 63px;
     text-transform: uppercase;
     background-color: #ed3543;
     box-shadow: 0 5px 0 0 #b42833;
-    padding-top: 20px;
-    /padding-left: 42px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 /*-------------------------------------------------------------*/
 .navi-up a {
@@ -490,7 +493,8 @@ min-height: 63px;
     color:#ffffff;
     width: 110px;
     text-align: right;
-    padding-top:42px;
+    text-align: bottom;
+    padding-top:30px;
     padding-bottom: 8px;
     background-color: #31415b;
 }
@@ -517,7 +521,7 @@ min-height: 63px;
 .navi-middle a:active {
     color: #92846c;
 }
-.footer-middle>.address {
+.footer-middle .address {
     display: inline-block;
     text-transform: none;
     font-family: "Cuprum", Arial, sans-serif;
@@ -526,8 +530,8 @@ min-height: 63px;
     color: #ffffff;
     background-color: #31415b;
 }
-.footer-bottom>.copyright-company,
-.footer-copyright>p {
+.footer-bottom .copyright-company,
+.footer-copyright p {
     display: inline-block;
     text-transform: none;
     font-family: "Cuprum", Arial, sans-serif;
@@ -536,16 +540,16 @@ min-height: 63px;
     color: #ffffff;
     background-color: #293349;
 }
-.copyright-email>.e-mail,
+.copyright-email .e-mail,
 .copyright-developer>.developer {
     color:#ffd180;
 }
-.copyright-email>.e-mail:hover,
-.copyright-developer>.developer:hover {
+.copyright-email .e-mail:hover,
+.copyright-developer .developer:hover {
     text-decoration: underline;
 }
-.copyright-email>.e-mail:active,
-.copyright-developer>.developer:active {
+.copyright-email .e-mail:active,
+.copyright-developer .developer:active {
     color:#ed3543;
 }
 /*--------------------------------------------------------*/
@@ -553,34 +557,34 @@ min-height: 63px;
 /*--------------------------------------------------------*/
 /*страница - CATALOG*/
 
-.client-account-login>.client-name {
+.client-account-login .client-name {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     color: #000000;
     font-weight: 400;
     background-color: #ffffff;
 }
-.client-account-login>.client-name:active {
+.client-account-login .client-name:active {
     color: #c5c5c5;
 }
-.order-and-account>li .btn-order,
-.order-and-account>li .btn-account {
+.order-and-account li .btn-order,
+.order-and-account li .btn-account {
     text-decoration: underline;
     color: #32425c;
 }
-.order-and-account>li .btn-order:hover,
-.order-and-account>li .btn-account:hover {
+.order-and-account li .btn-order:hover,
+.order-and-account li .btn-account:hover {
     text-decoration: underline;
     color: #ee3643;
 }
-.order-and-account>li .btn-order:active,
-.order-and-account>li .btn-account:active {
+.order-and-account li .btn-order:active,
+.order-and-account li .btn-account:active {
     text-decoration: underline;
     color: #c5c5c5;
 }
-.breadcrumbs li:nth-child(2) a,
-.breadcrumbs li:nth-child(3) a,
-.breadcrumbs li:nth-child(4) {
+
+.breadcrumbs a,
+.crumbs-current {
     text-transform: uppercase;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -614,7 +618,7 @@ min-height: 63px;
     line-height: 16px;
     font-weight: 400;
 }
-.filter input[value="Показать"] {
+.filter .btn-show {
     text-transform: uppercase;
     color: #000000;
     font-family: "PT Sans", Arial, sans-serif;
@@ -622,7 +626,7 @@ min-height: 63px;
     line-height: 16px;
     font-weight: 400;
 }
-.catalog-card a.buy {
+.catalog-card .buy {
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Cuprum", Arial, sans-serif;
@@ -631,7 +635,7 @@ min-height: 63px;
     font-weight: 400;
     background-color: #63a53d;
 }
-.catalog-card a.in-bookmark {
+.catalog-card .in-bookmark {
     text-transform: uppercase;
     color: #3c4b64;
     font-family: "Cuprum", Arial, sans-serif;
@@ -666,9 +670,4 @@ min-height: 63px;
 }
 .buy-finish {
     display: none;
-}
-/*Сеточные стили*/
-html,
-body {
-
 }

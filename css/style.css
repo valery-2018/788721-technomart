@@ -1,8 +1,7 @@
 body {
 
-    /*margin: 20px;*/
+    margin: 0;
     padding: 0;
-
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 18px;
@@ -203,10 +202,13 @@ a {
     padding-top: 50px;
     padding-left: 50px;
     padding-bottom: 45px;
+    margin-right: 70px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    width: 320px;
+    /*max-width: 320px;*/
+
 }
 .header-middle .phone-address {
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -214,8 +216,9 @@ a {
     justify-content: flex-end;
     align-items: flex-start;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    width: 330px;
+    max-width: 282px;
     padding-top: 48px;
+    margin-right: 69px;
     /*margin-left:75px;*/
     /*padding: 0;*/
     /*padding-top: 46px;*/
@@ -236,19 +239,20 @@ a {
     padding: 10px 50px 10px 70px;
 
 }
-.header-middle .phone::before {
+.phone::before {
     content: "";
 
     position: absolute;
     top: 0px;
     left: 0px;
 
-    width: 19px;
-    height: 19px;
+    width: 30px;
+    height: 30px;
 
     background-image: url("img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-color: #f6d7f9;
     /*opacity: 0.3;*/
 }
 .header-middle .our-address {
@@ -262,11 +266,12 @@ a {
     /*align-self: center;*/
 }
 .header-middle .client-navi {
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    padding-top: 48px;
+    padding-top: 50px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
     /*margin-bottom: 70px;*/
     width: 282px;
@@ -278,11 +283,11 @@ a {
     display: block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
-    line-height:26px;
+    line-height:21px;
     color: #000000;
     font-weight: 400;
     background-color: #ffffff;
-    padding: 12px 20px 12px 20px;
+    padding: 13px 24px 13px 24px;
 }
 .client-navi .button-enter {
     padding-left: 50px;
@@ -303,6 +308,7 @@ a {
 /*--------------------------------------------------------*/
 
 .navi-top {
+    list-style: none;
     margin: 0;
     padding: 0;
     width: 940px;
@@ -388,10 +394,10 @@ a {
 }
 .company .batton-about-company,
 .contacts .batton-email {
-    display: table-cell;/*центрует текст по высоте (позволяет работать vertical-align )*/
-    /*display: inline-block;*/
+    /*display: table-cell;/*центрует текст по высоте (позволяет работать vertical-align )*/
+    display: inline-block;
     /*height: 38px;*/
-    max-width: 87px;
+    max-width: 220px;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -557,28 +563,36 @@ width: 220px;
 /*--------------------------------------------------------*/
 /*страница - CATALOG*/
 
+.header-top .basket-not-empty {/*для Java*/
+    background-color: #ed3543;
+}
 .client-account-login .client-name {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
+    line-height: 21px;
     color: #000000;
     font-weight: 400;
     background-color: #ffffff;
 }
+
 .client-account-login .client-name:active {
     color: #c5c5c5;
 }
-.order-and-account li .btn-order,
-.order-and-account li .btn-account {
-    text-decoration: underline;
+.order-and-account .btn-order,
+.order-and-account .btn-account {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
     color: #32425c;
+
 }
-.order-and-account li .btn-order:hover,
-.order-and-account li .btn-account:hover {
+.order-and-account .btn-order:hover,
+.order-and-account .btn-account:hover {
     text-decoration: underline;
     color: #ee3643;
 }
-.order-and-account li .btn-order:active,
-.order-and-account li .btn-account:active {
+.order-and-account .btn-order:active,
+.order-and-account .btn-account:active {
     text-decoration: underline;
     color: #c5c5c5;
 }

@@ -50,51 +50,48 @@ a {
 }
 
 /*-------------------------------------------------------*/
-.wrapper-header-top {/*центровщик*/
+.wrapper-header-top {
     background-color: #293349;
-    display: flex;
-    justify-content: center;
-    outline: 2px solid red;
-    /*min-heigt: 42px;*/
 }
 
 /*-------------------------------------------------------*/
 .wrapper-header-middle {/*центровщик*/
-    display: flex;
-    justify-content: center;
-    outline: 2px solid red;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*outline: 2px solid red;*/
   /*min-heigt: 160px;*/
 }
 
 /*-------------------------------------------------------*/
 .header-navi {/*центровщик*/
-    display: flex;
-    justify-content: center;
-    outline: 2px solid red;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*outline: 2px solid red;*/
   /*min-height: 120px;*/
 }
 
 /*---------------------------------------------------------*/
 .wrapper-center-about {/*центровщик*/
-    display: flex;
-    justify-content: center;
-    outline: 2px solid red;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*outline: 2px solid red;*/
 }
 /*---------------------------------------------------------*/
 .footer-top {/*центровщик*/
-    display: flex;
-    justify-content: center;
-    outline: 2px solid red;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*outline: 2px solid red;*/
 }
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 /*стили HEADER*/
 
-.header-top {
+.centering {
     width: 940px;
-    min-heigt: 42px;
     display: flex;
-    outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
+    margin:0 auto;
+    padding: 0 10px;
+    outline: 1px solid black;/*визуализатор блоков 2-й уровень*/
   }
 .logo {
 
@@ -181,14 +178,14 @@ a {
 }
     /*---------------------------------------------*/
 .header-middle {
-    margin: 0;
-    padding: 0;
-    width: 940px;
-    min-height: 160px;
-    display: flex;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*width: 940px;*/
+    /*min-height: 160px;*/
+    /*display: flex;*/
     /*justify-content: space-between;*/
-    align-items: flex-start;
-    outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
+    /*align-items: flex-start;*/
+    /*outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/*/
 }
 .header-middle .header-heading {
     margin: 0;
@@ -196,6 +193,7 @@ a {
     display: flex;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
+    line-height: 23px;
     font-style: italic;
     color: #ee3643;
     font-weight: 400;
@@ -213,12 +211,12 @@ a {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    /*justify-content: center;*/
+    align-items: center;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    max-width: 282px;
-    padding-top: 48px;
-    margin-right: 69px;
+    /*max-width: 282px;*/
+    /*padding-top: 48px;*/
+    margin-right: 70px;
     /*margin-left:75px;*/
     /*padding: 0;*/
     /*padding-top: 46px;*/
@@ -236,8 +234,8 @@ a {
     color: #ee3643;
     font-weight: 400;
     border: 3px solid #ffffff;
-    padding: 10px 50px 10px 70px;
-
+    padding: 7px 50px 7px 70px;
+    margin-top: 42px;
 }
 .phone::before {
     content: "";
@@ -256,13 +254,14 @@ a {
     /*opacity: 0.3;*/
 }
 .header-middle .our-address {
+    display: block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     color: #32425c;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 14px;
     text-align: center;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     /*align-self: center;*/
 }
 .header-middle .client-navi {
@@ -270,10 +269,10 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
-    padding-top: 50px;
+    /*justify-content: flex-end;*/
+    padding-top: 42px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    /*margin-bottom: 70px;*/
+    margin-left: 0 auto;
     width: 282px;
     /*box-sizing: border-box;*/
 }
@@ -287,7 +286,7 @@ a {
     color: #000000;
     font-weight: 400;
     background-color: #ffffff;
-    padding: 13px 24px 13px 24px;
+    padding: 12px 24px 12px 24px;
 }
 .client-navi .button-enter {
     padding-left: 50px;
@@ -311,12 +310,15 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 940px;
-    min-height: 60px;
+    /*width: 940px;*/
+    /*min-height: 60px;*/
     margin-bottom: 60px;
     display: flex;
-    justify-content: center;
-    outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    background-color: #31415b;
+    box-shadow: 0 5px 0 0 #293349;
+    /*outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/*/
     /*justify-content: space-between;*/
 
 }
@@ -329,12 +331,12 @@ a {
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
-    background-color: #31415b;
+    /*background-color: #31415b;*/
     width: 134px;
     text-align: center;
-    padding-top:18px;
-    padding-bottom: 18px;
-    box-shadow: 0 5px 0 0 #293349;
+    padding-top:22px;
+    padding-bottom: 16px;
+    /*box-shadow: 0 5px 0 0 #293349;*/
 }
 .header-navi a:hover {
     background-color: #293349;
@@ -347,12 +349,12 @@ a {
 /*--------------------------------------------------------*/
 /*стили MAIN*/
 .company-contacts {
-    width: 940px;
-    height: 368px;
+    /*width: 940px;*/
+    min-height: 368px;
     margin-bottom: 87px;
     display: flex;
     justify-content: space-between;
-    outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
+    /*outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/*/
 }
 
 .company h2,
@@ -391,6 +393,7 @@ a {
     font-size: 18px;
     line-height: 40px;
     color: #000000;
+    padding-left: 34px;
 }
 .company .batton-about-company,
 .contacts .batton-email {
@@ -450,10 +453,10 @@ a {
 /*стили FOOTER*/
 
 .footer-navi {
-    width: 940px;
+    /*width: 940px;*/
     /*min-heigt: 63px;*/
     display: flex;
-    outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/
+    /*outline: 4px solid yellow;*//*визуализатор блоков 2-й уровень*/
     justify-content: space-between;
 }
 
@@ -463,7 +466,7 @@ a {
     /*width:220px;*/
 
     display: flex;
-    outline: 10px solid blue;/*визуализатор блоков 3-й уровень*/
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 
 
@@ -471,8 +474,9 @@ a {
     margin:0;
     padding:0;
     display: flex;
-    /justify-content: flex-end;
+    /*justify-content: flex-end;*/
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*margin-left: 0 auto;*/
 }
 /*------------------------------------------------------*/
 .block-footer-logo a {
@@ -566,17 +570,54 @@ width: 220px;
 .header-top .basket-not-empty {/*для Java*/
     background-color: #ed3543;
 }
+.client-account {
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    margin: 0 auto;
+    max-width: 282px;
+
+}
+.client-account-login {
+    display: flex;
+    margin:0;
+    padding:0;
+    padding-top: 42px;
+}
 .client-account-login .client-name {
+    display: block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
     font-weight: 400;
     background-color: #ffffff;
+    /*margin-top: 42px;*/
+    padding: 12px 60px 12px 40px;
+    /*width: 282px;*/
+    white-space: nowrap;
 }
 
 .client-account-login .client-name:active {
     color: #c5c5c5;
+}
+
+.order-and-account {
+    display: flex;
+    margin:0;
+    padding:0;
+}
+.order-and-account .btn-order {
+    display: inline-block;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.order-and-account .btn-account {
+    display: inline-block;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-left: 32px;
 }
 .order-and-account .btn-order,
 .order-and-account .btn-account {

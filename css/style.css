@@ -247,7 +247,7 @@ a {
     height: 30px;
 
     background-color: #f6d7f9;
-    background-image: url("img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 
@@ -577,9 +577,62 @@ a {
 .social-buttons {
     list-style: none;
     display: flex;
+    /*justifu-content: space-between;*/
+    align-items: center;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
     width: 132px;
 }
+/*.social-buttons li {*/
+    /*display: flex;*/
+/*}*/
+.social-buttons img {
+  background-size: 40px 40px;
+  margin-right: 27px;
+  border-radius: 50%;
+  background-color: #212939;
+}
+.social-buttons li:last-shild img {
+  margin-right: 0px;
+}
+/*---------------------------------*/
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.page-footer__social-item {
+  width: 41px;
+  height: 41px;
+  margin-right: 5px;
+  font-size: 0;
+  background-color: #202839;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  transition: ease 0.1s;
+}
+.page-footer__social-item:last-of-type {
+  margin-right: 0;
+}
+.page-footer__social-item:nth-of-type(1) {
+  background-image: url("../img/icons/icon-social-vk.png");
+}
+.page-footer__social-item:nth-of-type(2) {
+  background-image: url("../img/icons/icon-social-f.png");
+}
+.page-footer__social-item:nth-of-type(3) {
+  background-image: url("../img/icons/icon-social-i.png");
+}
+.page-footer__social-item:hover {
+  background-color: #ee3643;
+}
+.page-footer__social-item:active {
+  background-color: #ee3643;
+  transform: scale(0.95);
+}
+/*---------------------------------*/
+
+
 .footer-copyright {
     display: flex;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
@@ -594,10 +647,21 @@ a {
     color: #ffffff;
     background-color: #293349;
 }
+
+.copyright-developer {
+    margin-left: 54px;
+    margin-top: 38px;
+    margin-bottom: 28px;
+    margin-right: 16px;
+}
+.copyright-email {
+    /*margin-left: 50px;*/
+    margin-top: 38px;
+    margin-bottom: 28px;
+}
 .copyright-email .e-mail,
 .copyright-developer .developer {
     color:#ffd180;
-    margin-left: 50px;
 }
 .copyright-email .e-mail:hover,
 .copyright-developer .developer:hover {

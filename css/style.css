@@ -248,11 +248,12 @@ a {
 
     width: 30px;
     height: 30px;
-
+    
+    background-color: #f6d7f9;
     background-image: url("img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-color: #f6d7f9;
+
     /*opacity: 0.3;*/
 }
 .header-middle .our-address {

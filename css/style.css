@@ -306,7 +306,7 @@ a {
 }
 /*--------------------------------------------------------*/
 
-.navi-top {
+.header-navi .navi-top {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -314,34 +314,39 @@ a {
     /*min-height: 60px;*/
     margin-bottom: 60px;
     display: flex;
+    flex-grow: 1;
     /*align-items: center;*/
     /*justify-content: center;*/
     background-color: #31415b;
     box-shadow: 0 5px 0 0 #293349;
-    /*outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/*/
-    /*justify-content: space-between;*/
-
+    justify-content: space-around;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 
-  /*align-items: flex-start;*/
+.navi-top li:last-of-type {
+    margin-right: 30px;
+}
+.navi-top li:first-of-type {
+    margin-left: 30px;
+}
 
-.header-navi a {
+.navi-top a {
     display:inline-block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
     /*background-color: #31415b;*/
-    width: 134px;
+    /*width: 134px;*/
     text-align: center;
     padding-top:22px;
     padding-bottom: 16px;
     /*box-shadow: 0 5px 0 0 #293349;*/
 }
-.header-navi a:hover {
+.navi-top a:hover {
     background-color: #293349;
 }
-.header-navi a:active {
+.navi-top a:active {
     background-color: #1d2639;
     color: #8b8e94;
 }
@@ -710,7 +715,7 @@ a {
 .client-account-login .client-name:active {
     color: #c5c5c5;
 }
-
+/*-------------------------*/
 .order-and-account {
     list-style: none;
     display: flex;
@@ -747,7 +752,7 @@ a {
     text-decoration: underline;
     color: #c5c5c5;
 }
-
+/*-------------------------*/
 .breadcrumbs {
     list-style: none;
 }
@@ -797,15 +802,127 @@ a {
     line-height: 16px;
     font-weight: 400;
 }
+/*-------------------------*/
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    width: 700px;
+    margin: 20px auto;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
+.catalog-card {
+    position: relative;
+    display: inline-block;
+    width: 218px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    line-height: 20px;
+    /*font-weight:bold;*/
+    text-align: center;
+}
+.catalog-card:nth-of-type(3n) {
+    margin-right :0;
+}
+.catalog-list {
+    font-size: 0;
+}
+.catalog-card {
+    font-size: 16px;
+}
+.catalog-card .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+     z-index: 20;
+}
+.catalog-card .flag-new {
+    background: url("../img/new-flag.svg") no-repeat 0 0;
+}
+.catalog-card .active{
+    position:absolute;
+    top:0;
+    left:0;
+    width:218px;
+    height:88px;
+    padding:40px 0;
+    background-color:rgba(255,255,255,1);
+    z-index:100;
+}
+.active .buy,
+.active .in-bookmark{
+    display:block;
+    width:129px;
+    margin:0 auto;
+    margin-bottom:7px;
+    padding:7px 0;
+    border:3px solid #63a63e;
+    border-bottom-color:#367315;
+    background-color:#63a63e;
+    border-radius:3px;
+}
+.catalog-card .active{
+    display:none;
+}
+.catalog-card:hover .active{
+    display:block;
+}
+.catalog-card .image {
+    width: 218px;
+    height: 168px;
+}
+.image img {
+    max-width: 100%;
+}
+.card-title h3{
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.card-title b{
+    display: block;
+}
+.catalog-card .old-price {
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    /*color:#999;*/
+    /*text-decoration:line-through;*/
+}
+.catalog-card .new-price {
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
+.catalog-card .new-price:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:-20px;
+    width:0;
+    height:0;
+    border:20px solid white;
+    border-left-color:#ee3643;
+}
+
+/**********/
 .catalog-card .buy {
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 18px;
     font-weight: 400;
     background-color: #63a53d;
 }
@@ -817,6 +934,7 @@ a {
     line-height: 16px;
     font-weight: 400;
     background-color: #ffffff;
+    border-bottom-color:#63a63e;
 }
 .catalog h3 {
     text-transform: none;
@@ -825,6 +943,7 @@ a {
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
+    /*text-align: center;*/
 }
 .card-title .old-price {
     color: #999999;
@@ -842,6 +961,8 @@ a {
     font-weight: 700;
     background-color: #ee3643;
 }
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
 .buy-finish {
     display: none;
 }

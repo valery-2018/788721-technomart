@@ -691,7 +691,8 @@ a {
     display: inline-block;
     text-decoration: underline;
     padding-top: 10px;
-    padding-left: 32px;
+    /*padding-left: 32px;*/
+    padding-left: 14px;
 }
 .order-and-account .btn-order,
 .order-and-account .btn-account {
@@ -710,6 +711,15 @@ a {
 .order-and-account .btn-account:active {
     text-decoration: underline;
     color: #c5c5c5;
+}
+.order-and-account li:nth-of-type(2) {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #32425c;
+  margin-top: 18px;
+  margin-left: 14px;
 }
 /*-------------------------*/
 /*-------------------------*/

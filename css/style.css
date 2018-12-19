@@ -140,16 +140,7 @@ a {
     color: #8b8e94;
 }
     /*---------------------------------------------*/
-.header-middle {
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*width: 940px;*/
-    /*min-height: 160px;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: flex-start;*/
-    /*outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/*/
-}
+
 .header-middle .header-heading {
     margin: 0;
     padding: 0;
@@ -660,9 +651,10 @@ a {
     font-weight: 400;
     background-color: #ffffff;
     /*margin-top: 42px;*/
-    padding: 12px 60px 12px 40px;
+    padding: 12px 58px 12px 40px;
     /*width: 282px;*/
     white-space: nowrap;
+    position: relative;
 }
 
 .client-account-login .client-name:active {
@@ -673,11 +665,11 @@ a {
     content: "";
 
     position: absolute;
-    top: 10px;
-    left: 13px;
+    top: 14px;
+    left:14px;
 
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 18px;
     background-image: url("../img/icon-user.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -815,6 +807,8 @@ a {
 }
 /*-------------------------*/
 .catalog-list {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -823,6 +817,7 @@ a {
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
     }
 .catalog-card {
+
     position: relative;
     display: inline-block;
     width: 218px;
@@ -837,7 +832,7 @@ a {
     box-shadow: 0px 0px 10px 0px #b2b6be,1px 10px 20px 0px #b2b6be;
 }
 .catalog-card:nth-of-type(3n) {
-    margin-right :0;
+    margin-right : 0px;
 }
 .catalog-list {
     font-size: 0;

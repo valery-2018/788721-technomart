@@ -57,19 +57,24 @@
         </nav>
         <!-- --------------------------------------------------- -->
       </header>
-      <!-- ФИЛЬТРЫ -->
+      <!-- breadcrumbs и ФИЛЬТРЫ -->
     <main class="main">
+     <div class="centering">
       <ul class="breadcrumbs">
-        <li><a class="home" href="index.html"><span class="vissualy-hidden">Каталог</span></a></li>
+        <li><a class="home" href="index.html"><span class="visually-hidden">Каталог</span></a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="tools.html">Инструмент</a></li>
         <li class="crumbs-current">Перфораторы</li>
       </ul>
-      <h2 class="perforatory">Перфораторы</h2>
+     </div>
+     <div class="fon-perfo centering">
+         <h2 class="perforatory">Перфораторы</h2>
+     </div>
       <!-- Закрашено красным цветом -->
+     <div class="filters-and-cads centering">
       <section class="filters">
-        <h2 class="visually-hiden">Фильтры<h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <h2 class="visually-hidden">Фильтры<h2>
+        <form class="filter" method="get"       action="https://echo.htmlacademy.ru">
           <fieldset class="fieldset">
             <legend class="legend">Производители:</legend>
                 <ul>
@@ -93,10 +98,10 @@
               <li class="filter-option"><input type="radio" checked id="power" name="power" value="power grid">
                   <label class="label" for="power">сетевые</label></li>
             </ul>
-        </fieldset>
-         <input class="button btn-show" type="submit" name="show" value="Показать">
+          </fieldset>
+          <input class="button btn-show" type="submit" name="show" value="Показать">
        </form>
-    </section>
+     </section>
     <!-- КАТАЛОГ -->
       <div class="catalog">
         <ul class="catalog-list">
@@ -241,24 +246,23 @@
           <!-- -------------- -->
         </ul>
       </div>
+    </div>
           <!-- Закрашено красным цветом -->
           <div class="buy-finish">
-              <!-- <form class="buy-continue" action="https://echo.htmlacademy.ru" method="get"> -->
-                 <!-- <label><input class="item-in-cart" type="checkbox" name="in-cart" checked><span>Товар добавлен в корзину!</span></label> -->
                   <h2>Товар добавлен в корзину!</h2>
                   <a class="order" href="#">Оформить заказ</a>
                   <a class="continue-shopping">Продолжить покупки</a>
                 <button class="btn-close buy-close" type="button" aria-label="Закрыть">Закрыть</button>
-            <!-- </form> -->
-        </div>
+          </div>
     </main>
     <!-- --------------------------------------------------- -->
     <!-- --------------------------------------------------- -->
-    <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer-top">
-        <nav class="navi footer-navi">
-          <a class="logo footer-logo">Техномарт</a>
+       <div class="footer-top">
+        <nav class="footer-navi centering">
+          <ul class="block-footer-logo">
+            <li><a class="footer-logo">Техномарт</a></li>
+          </ul>
           <ul class="navi-up">
             <li><a href="index.html">Компания</a></li>
             <li><a href="index.html">Новости</a></li>
@@ -268,34 +272,39 @@
           </ul>
         </nav>
       </div>
+    <!-- --------------------------------------------------- -->
       <div class="footer-middle">
-        <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          <br>+7 (812) 555-05-55</p>
-        <nav class="navi footer-navi-middle">
-          <ul class="navi-middle">
-            <li><a href="index.html">Материалы</a></li>
-            <li><a href="index.html">Техника</a></li>
-            <li><a href="index.html">Инструмент</a></li>
-            <li><a href="index.html">Спецпредложения</a></li>
-          </ul>
-        </nav>
+        <div class="footer-middle-flex centering">
+                <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                <br>+7 (812) 555-05-55</p>
+          <nav class="navi footer-navi-middle">
+            <ul class="navi-middle">
+                <li><a href="index.html">Материалы</a></li>
+                <li><a href="index.html">Техника</a></li>
+                <li><a href="index.html">Инструмент</a></li>
+                <li><a href="index.html">Спецпредложения</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div class="footer-bottom">
-        <p class="copyright-company">&copy; 2010–2017 Компания «Техномарт»
-          <br>Все права защищены</p>
-          <ul class="social-buttons">
-            <li><a class="social-btn icon-vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
-            <li><a class="social-btn-facebook" href="#" aria-label="Фейсбук">Фейсбук</a></li>
-            <li><a class="social-btn-instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
-          </ul>
-          <div class="footer-copyright">
+        <div class="footer-bottom-flex centering">
+            <p class="copyright-company">&copy; 2010–2017 Компания «Техномарт»
+                <br>Все права защищены</p>
+            <div class="social-buttons">
+              <a class="social-btn icon-vk" href="#" aria-label="Вконтакте">Вконтакте</a>
+              <a class="social-btn facebook" href="#" aria-label="Фейсбук">Фейсбук</a>
+              <a class="social-btn instagram" href="#" aria-label="Инстаграм">Фейсбук</a>
+            </div>
+            <div class="footer-copyright">
               <p class="copyright-email">Обратная связь:
                   <br><a class="e-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </p>
               <p class="copyright-developer">Разработано —
                   <br><a class="developer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
               </p>
-          </div>
+            </div>
+        </div>
       </div>
     </footer>
   </body>

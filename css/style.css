@@ -8,8 +8,6 @@ body {
     color: #000000;
     text-transform: none;
     background-color: #ffffff;
-    /*width: 1200px;*/
-
 }
 a {
     text-decoration: none;
@@ -33,7 +31,19 @@ a {
 .wrapper-header-top {
     background-color: #293349;
 }
-
+.visually-hidden {
+    /*font-size: 0;*/
+    display: block;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /*-------------------------------------------------------*/
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
@@ -199,13 +209,9 @@ a {
 
     width: 19px;
     height: 19px;
-
-    /*background-color: #f6d7f9;*/
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-
-    /*opacity: 0.3;*/
 }
 .header-middle .our-address {
     display: block;
@@ -307,13 +313,14 @@ a {
 /*--------------------------------------------------------*/
 /*--------------------------------------------------------*/
 /*стили MAIN*/
+
 .company-contacts {
     /*width: 940px;*/
     min-height: 368px;
     margin-bottom: 87px;
     display: flex;
     justify-content: space-between;
-    /*outline: 4px solid yellow;/*визуализатор блоков 2-й уровень*/*/
+
 }
 
 .company h2,
@@ -661,6 +668,20 @@ a {
 .client-account-login .client-name:active {
     color: #c5c5c5;
 }
+.client-name:before {
+
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 13px;
+
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/icon-user.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
 /*-------------------------*/
 .order-and-account {
     list-style: none;
@@ -699,8 +720,18 @@ a {
     color: #c5c5c5;
 }
 /*-------------------------*/
+/*-------------------------*/
+.header {
+    margin-bottom: 22px;
+}
 .breadcrumbs {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-bottom: 23px;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+
 }
 .breadcrumbs a,
 .crumbs-current {
@@ -711,12 +742,46 @@ a {
     font-weight: 400;
     color: #000000;
 }
+.breadcrumbs li:nth-of-type(2) {
+    margin-left: 54px;
+    margin-right: 43px;
+    position: relative;
+}
+.breadcrumbs li:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -54px;
+
+    width: 15px;
+    height: 12px;
+
+    background-image: url("../img/icon-home.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+.breadcrumbs li:nth-of-type(3) {
+    margin-right: 43px;
+}
 .perforatory {
     text-transform: uppercase;
     color: #32425c; /*здесь именно этот цвет по стайлгайду*/
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
+    margin-left: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+}
+.fon-perfo {
+    background-color: #f1f5f7;
+}
+/*-------------------------*/
+.filters {
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 .filters ul {
     list-style: none;
@@ -756,7 +821,7 @@ a {
     width: 700px;
     margin: 20px auto;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-}
+    }
 .catalog-card {
     position: relative;
     display: inline-block;
@@ -767,6 +832,9 @@ a {
     line-height: 20px;
     /*font-weight:bold;*/
     text-align: center;
+}
+.catalog-card:hover {
+    box-shadow: 0px 0px 10px 0px #b2b6be,1px 10px 20px 0px #b2b6be;
 }
 .catalog-card:nth-of-type(3n) {
     margin-right :0;
@@ -798,7 +866,7 @@ a {
     height:88px;
     padding:40px 0;
     background-color:rgba(255,255,255,1);
-    z-index:100;
+    z-index:10;
 }
 .active .buy,
 .active .in-bookmark{
@@ -807,10 +875,27 @@ a {
     margin:0 auto;
     margin-bottom:7px;
     padding:7px 0;
-    border:3px solid #63a63e;
+    border:3px solid #63a53d;
     border-bottom-color:#367315;
-    background-color:#63a63e;
+    background-color:#63a53d;
     border-radius:3px;
+}
+.active .buy:hover {
+    background-color:#5fbb2d;
+    border: 3px solid #5fbb2d;
+    border-bottom-color:#367315;
+}
+.active .buy:active {
+    background-color:#508534;
+    border: 3px solid #508534;
+    border-bottom-color:#508534;
+}
+.active .in-bookmark:hover {
+    border: 3px solid #31415b;
+}
+.active .in-bookmark:active {
+    border: 3px solid #c1c6cd;
+    color: #c1c6cd;
 }
 .catalog-card .active{
     display:none;
@@ -874,7 +959,7 @@ a {
 }
 .catalog-card .in-bookmark {
     text-transform: uppercase;
-    color: #3c4b64;
+    color: #31415b;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;

@@ -265,33 +265,38 @@ a {
     /*min-height: 60px;*/
     margin-bottom: 60px;
     display: flex;
-    flex-grow: 1;
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    /*flex-grow: 1;*/
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #31415b;
     box-shadow: 0 5px 0 0 #293349;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 
-.navi-top li:last-of-type {
-    margin-right: 30px;
+.navi-top li:last-child {
+    /*margin-right: 30px;*/
+    flex-grow: 1;
 }
-.navi-top li:first-of-type {
-    margin-left: 30px;
+.navi-top li:first-child {
+    /*margin-left: 30px;*/
+    flex-grow: 1;
+    text-align: right;
+
 }
 
 .navi-top a {
-    display:inline-block;
+    display: block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
     /*background-color: #31415b;*/
-    /*width: 134px;*/
-    text-align: center;
+    /*text-align: center;*/
     padding-top:22px;
     padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
     /*box-shadow: 0 5px 0 0 #293349;*/
 }
 .navi-top a:hover {
@@ -300,6 +305,49 @@ a {
 .navi-top a:active {
     background-color: #1d2639;
     color: #8b8e94;
+}
+/*--------------------------------------------------------*/
+/*.site-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #32425c;
+    box-shadow: 0 5px 0 0 #293449;
+}
+
+.site-navigation li {
+  text-decoration: none;
+}
+
+.site-navigation li:first-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.site-navigation li:last-child {
+    flex-grow: 1;
+}
+
+.site-navigation a {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+    display: block;
+    padding: 19px 30px;
+}
+
+.site-navigation a:hover,.site-navigation a:focus {
+    background: #293449;
+}
+
+.site-navigation a:active {
+    background: #1d2739;
+    color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0 5px 0 0 #1d2739;*/
 }
 /*--------------------------------------------------------*/
 /*--------------------------------------------------------*/
@@ -861,7 +909,7 @@ a {
      z-index: 20;
 }
 .catalog-card .flag-new {
-    background: url("../img/new-flag.svg") no-repeat 0 0;
+    background: url("../img/new-flag.png") no-repeat 0 0;
 }
 .catalog-card .active{
     position:absolute;

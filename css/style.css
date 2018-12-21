@@ -265,7 +265,7 @@ a {
     /*min-height: 60px;*/
     margin-bottom: 60px;
     display: flex;
-    /*flex-grow: 1;*/
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #31415b;
@@ -307,55 +307,13 @@ a {
     color: #8b8e94;
 }
 /*--------------------------------------------------------*/
-/*.site-navigation {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: #ffffff;
-    background-color: #32425c;
-    box-shadow: 0 5px 0 0 #293449;
-}
-
-.site-navigation li {
-  text-decoration: none;
-}
-
-.site-navigation li:first-child {
-    flex-grow: 1;
-    text-align: right;
-}
-
-.site-navigation li:last-child {
-    flex-grow: 1;
-}
-
-.site-navigation a {
-    font-size: 17px;
-    line-height: 17px;
-    color: #ffffff;
-    display: block;
-    padding: 19px 30px;
-}
-
-.site-navigation a:hover,.site-navigation a:focus {
-    background: #293449;
-}
-
-.site-navigation a:active {
-    background: #1d2739;
-    color: rgb(255, 255, 255, 0.5);
-    box-shadow: 0 5px 0 0 #1d2739;*/
-}
 /*--------------------------------------------------------*/
 /*--------------------------------------------------------*/
 /*стили MAIN*/
 
 .company-contacts {
     /*width: 940px;*/
-    min-height: 368px;
+    /*min-height: 368px;*/
     margin-bottom: 87px;
     display: flex;
     justify-content: space-between;
@@ -436,7 +394,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-
+    /*margin-bottom: 86px;*/
     /*height: 368px;*/
 }
 .contacts {
@@ -445,7 +403,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-
+    /*margin-bottom: 86px;*/
     /*height: 368px;*/
 }
 
@@ -503,13 +461,15 @@ a {
     font-size: 18px;
     line-height: 20px;
     color:#ffffff;
-    width: 120px;
+    /*width: 120px;*/
     text-align: right;
     text-align: bottom;
     padding-top:30px;
     padding-bottom: 8px;
     background-color: #31415b;
-
+}
+.navi-up li:not(:first-of-type) {
+    margin-left: 62px;
 }
 .navi-up a:hover {
     text-decoration: underline;
@@ -555,13 +515,16 @@ a {
     line-height: 20px;
     text-align: bottom;
     color:#ffd180;
-    width: 130px;
+    /*width: 130px;*/
     background-color: #31415b;
-    text-align: left;
+    text-align: right;
     padding-top: 36px;
 }
-.navi-middle li:last-child {
+/*.navi-middle li:last-child {
     text-align: right;
+}*/
+.navi-middle li:not(:first-of-type) {
+    margin-left: 62px;
 }
 .navi-middle a:hover {
     text-decoration: underline;
@@ -734,13 +697,25 @@ a {
     text-decoration: underline;
     padding-top: 10px;
     padding-left: 20px;
+    padding-right: 32px;
+    position: relative;
+}
+.btn-order::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 110px;
+
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #32425c;
 }
 .order-and-account .btn-account {
     display: inline-block;
     text-decoration: underline;
     padding-top: 10px;
-    /*padding-left: 32px;*/
-    padding-left: 14px;
+
 }
 .order-and-account .btn-order,
 .order-and-account .btn-account {
@@ -760,7 +735,7 @@ a {
     text-decoration: underline;
     color: #c5c5c5;
 }
-.order-and-account li:nth-of-type(2) {
+/*.order-and-account li:nth-of-type(2) {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -768,7 +743,7 @@ a {
   background-color: #32425c;
   margin-top: 18px;
   margin-left: 14px;
-}
+}*/
 /*-------------------------*/
 /*-------------------------*/
 .header {
@@ -792,7 +767,7 @@ a {
     font-weight: 400;
     color: #000000;
 }
-.breadcrumbs li:nth-of-type(2) {
+/*.breadcrumbs li:nth-of-type(2) {
     margin-left: 54px;
     margin-right: 43px;
     position: relative;
@@ -813,7 +788,11 @@ a {
 }
 .breadcrumbs li:nth-of-type(3) {
     margin-right: 43px;
+}*/
+.breadcrumbs li:not(:first-of-type) {
+    margin-left: 40px;
 }
+/*-------------------------*/
 .perforatory {
     text-transform: uppercase;
     color: #32425c; /*здесь именно этот цвет по стайлгайду*/
@@ -879,7 +858,7 @@ a {
     position: relative;
     display: inline-block;
     width: 218px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     margin-bottom: 20px;
     border: 1px solid #ccc;
     line-height: 20px;
@@ -889,8 +868,11 @@ a {
 .catalog-card:hover {
     box-shadow: 0px 0px 10px 0px #b2b6be,1px 10px 20px 0px #b2b6be;
 }
-.catalog-card:nth-of-type(3n) {
+/*.catalog-card:nth-of-type(3n) {
     margin-right : 0px;
+}*/
+.catalog-card:not(:nth-of-type(3n)) {
+    margin-right: 20px;
 }
 .catalog-list {
     font-size: 0;
@@ -906,7 +888,7 @@ a {
     height: 60px;
     text-indent: -1000px;
     overflow: hidden;
-     z-index: 20;
+    z-index: 20;
 }
 .catalog-card .flag-new {
     background: url("../img/new-flag.png") no-repeat 0 0;
@@ -951,10 +933,11 @@ a {
     color: #c1c6cd;
 }
 .catalog-card .active{
-    display:none;
+    /*display:none;*/
+    opacity: 0;
 }
 .catalog-card:hover .active{
-    display:block;
+    opacity: 1;
 }
 .catalog-card .image {
     width: 218px;

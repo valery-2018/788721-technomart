@@ -662,7 +662,7 @@ a {
     font-weight: 400;
     background-color: #ffffff;
     /*margin-top: 42px;*/
-    padding: 12px 58px 12px 40px;
+    padding: 12px 57px 12px 40px;
     /*width: 282px;*/
     white-space: nowrap;
     position: relative;
@@ -685,6 +685,20 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.client-name:after {
+
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    right:10px;
+
+    width: 21px;
+    height: 17px;
+    background-image: url("../img/icon-logout.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
 /*-------------------------*/
 .order-and-account {
     list-style: none;
@@ -696,15 +710,15 @@ a {
     display: inline-block;
     text-decoration: underline;
     padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 32px;
+    margin-left: 20px;
+    margin-right: 32px;
     position: relative;
 }
 .btn-order::after {
     content: "";
     position: absolute;
     top: 17px;
-    left: 110px;
+    left: 88px;
 
     width: 5px;
     height: 5px;
@@ -757,9 +771,9 @@ a {
     margin-bottom: 23px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
-.breadcrumbs li {
+/*.breadcrumbs li {
     position: relative;
-}
+}*/
 
 .breadcrumbs a,
 .crumbs-current {

@@ -756,8 +756,11 @@ a {
     display: flex;
     margin-bottom: 23px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-
 }
+.breadcrumbs li {
+    position: relative;
+}
+
 .breadcrumbs a,
 .crumbs-current {
     text-transform: uppercase;
@@ -791,6 +794,20 @@ a {
 }*/
 .breadcrumbs li:not(:first-of-type) {
     margin-left: 40px;
+    position: relative;
+}
+.breadcrumbs li::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -23px;
+
+    width: 8px;
+    height: 12px;
+
+    background-image: url("../img/icon-right-small.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 /*-------------------------*/
 .perforatory {

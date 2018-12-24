@@ -623,16 +623,7 @@ a {
     /*height: 368px;*/
 }
 
-/*------------------------------------------*/
-.modal-map {
-    display: none;
-}
-.write-us {
-    display: none;
-}
-/*------------------------------------------*/
-/*------------------------------------------*/
-/*------------------------------------------*/
+
 /*стили FOOTER*/
 
 .footer-navi {
@@ -1145,6 +1136,34 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
  }
+ .filter-input-checkbox:not(:checked):hover + label::before {
+   content: "";
+   position: absolute;
+
+   width: 23px;
+   height: 23px;
+
+   top:-1px;
+   left:-34px;
+
+   background-image: url("../img/checkbox-off-hover.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+ }
+ .filter-input-checkbox:checked:hover + label::after {
+   content: "";
+
+   position: absolute;
+   top: -1px;
+   left: -34px;
+
+   width: 27px;
+   height: 23px;
+
+   background-image: url("../img/checkbox-on-hover.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+  }
 
  .filter-input-radio:not(:checked) + label::before {
    content: "";
@@ -1175,21 +1194,48 @@ a {
    background-repeat: no-repeat;
    background-position: 0 0;
   }
-  /*---------*/
-  .filter-input:hover + label::before,
-  .filter-input:hover + label::after
-   {
-    color: #b5b5b5;
-    opacity:0.9;
+  .filter-input-radio:not(:checked):hover + label::before {
+    content: "";
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+
+    top:-2px;
+    left:-34px;
+
+    background-image: url("../img/radio-off-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
   }
+  .filter-input-radio:checked:hover + label::after {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: -34px;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../img/radio-on-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+   }
+
+  /*---------*/
 
   .filter-input:disabled + label,
   .filter-input:disabled + label::after,
-  .filter-input:disabled + label::before
-   {
-    color: #b5b5b5;
-    opacity:0.8;
+  .filter-input:disabled + label::before,
+  .filter-input:disabled:hover + label,
+  .filter-input:disabled:hover + label::after,
+  .filter-input:disabled:hover + label::before {
+    color: #c5c5c5;
+    opacity:0.7;
   }
+
 .filter .btn-show {
     text-transform: uppercase;
     color: #000000;
@@ -1392,4 +1438,40 @@ a {
 /*--------------------------------------------------------*/
 .buy-finish {
     display: none;
+}
+/*------------------------------------------*/
+.modal-map {
+  /  display: none;
+}
+.write-us {
+    display: none;
+}
+/*------------------------------------------*/
+/*------------------------------------------*/
+/*------------------------------------------*/
+.modal-map {
+  /top: 50%;
+  /left: 50%;
+
+  width: 940px;
+  height: 443px;
+  margin-top: -800px;
+  margin-left: 155px;
+  box-shadow: 0 0px 20px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.map-close {
+  content: "";
+  position: absolute;
+
+  width: 27px;
+  height: 27px;
+
+  top:2px;
+  right:2px;
+
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }

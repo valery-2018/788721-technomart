@@ -32,7 +32,6 @@ a {
     background-color: #293349;
 }
 .visually-hidden {
-    /*font-size: 0;*/
     display: block;
     width: 1px;
     height: 1px;
@@ -57,7 +56,6 @@ a {
     outline: 1px solid black;/*визуализатор блоков 2-й уровень*/
   }
 .logo {
-
     width:220px;
     text-align: center;
     font-family: "Cuprum", Arial, sans-serif;
@@ -186,9 +184,7 @@ a {
 .header-top .bookmarks:active,
 .header-top .basket:active {
     background-color: #161d29;
-    /*color: #8b8e94;*/
     color: rgba(255,255,255,0.6);
-    /*opacity: 0.6;*/
 }
 .bookmarks {
     position: relative;
@@ -315,8 +311,6 @@ a {
     padding-bottom: 45px;
     margin-right: 70px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    /*max-width: 320px;*/
-
 }
 .header-middle .phone-address {
     list-style: none;
@@ -324,20 +318,12 @@ a {
     padding: 0;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    /*max-width: 282px;*/
-    /*padding-top: 48px;*/
     margin-right: 70px;
-    /*margin-left:75px;*/
-    /*padding: 0;*/
-    /*padding-top: 46px;*/
 }
-
 .header-middle .phone {
     display: block;
-    /*width: 270px;*/
     margin: 0;
     padding: 0;
     position: relative;
@@ -371,20 +357,16 @@ a {
     font-weight: 400;
     line-height: 14px;
     text-align: center;
-    /*padding-left: 10px;*/
-    /*align-self: center;*/
 }
 .header-middle .client-navi {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    /*justify-content: flex-end;*/
     padding-top: 42px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
     margin-left: 0 auto;
     width: 282px;
-    /*box-sizing: border-box;*/
 }
 .client-navi li:first-of-type {
   position: relative;
@@ -429,7 +411,6 @@ a {
   background-position: 0 0;
 }
 .client-navi a{
-/*.header-middle .client-navi a.batton-registration */
     display: block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
@@ -462,7 +443,6 @@ a {
     margin: 0;
     padding: 0;
     max-width: 940px;
-    /*min-height: 60px;*/
     margin-bottom: 60px;
     display: flex;
     flex-grow: 1;
@@ -470,19 +450,15 @@ a {
     justify-content: center;
     background-color: #31415b;
     box-shadow: 0 5px 0 0 #293349;
-    /*justify-content: space-around;*/
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 
 .navi-top li:last-of-type {
-    /*margin-right: 30px;*/
     flex-grow: 1;
 }
 .navi-top li:first-of-type {
-    /*margin-left: 30px;*/
     flex-grow: 1;
     text-align: right;
-
 }
 
 .navi-top a {
@@ -491,13 +467,10 @@ a {
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
-    /*background-color: #31415b;*/
-    /*text-align: center;*/
     padding-top:22px;
     padding-bottom: 16px;
     padding-left: 30px;
     padding-right: 30px;
-    /*box-shadow: 0 5px 0 0 #293349;*/
 }
 .navi-top a:hover {
     background-color: #293349;
@@ -512,8 +485,6 @@ a {
 /*стили MAIN*/
 
 .company-contacts {
-    /*width: 940px;*/
-    /*min-height: 368px;*/
     margin-bottom: 87px;
     display: flex;
     justify-content: space-between;
@@ -528,11 +499,8 @@ a {
     font-size: 30px;
     line-height: 30px;
     color: #000000;
-    /*display: block;*/
-    /*margin-bottom: -15px;*/
     margin: 0;
     padding: 0;
-    /*margin-bottom: 24px;*/
 }
 .company p,
 .contacts p {
@@ -546,14 +514,11 @@ a {
     padding-bottom: 0px;
     margin: 0;
     padding: 0;
-    /*margin-bottom: 36px;*/
 }
 .company ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    /*display: block;*/
-    /*margin-bottom: 36px;*/
 }
 .company li {
     text-transform: none;
@@ -565,23 +530,19 @@ a {
     position: relative;
 }
 .company li::before {
-  content: "";
-  position: absolute;
-  top: 19px;
-  left: 0px;
+    content: "";
+    position: absolute;
 
-  width: 25px;
-  height: 2px;
-  background-color: #ed3543;
-  /*background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;*/
+    top: 19px;
+    left: 0px;
+
+    width: 25px;
+    height: 2px;
+    background-color: #ed3543;
 }
 .company .batton-about-company,
 .contacts .batton-email {
-    /*display: table-cell;/*центрует текст по высоте (позволяет работать vertical-align )*/
     display: inline-block;
-    /*height: 38px;*/
     max-width: 220px;
     text-align: center;
     vertical-align: middle;
@@ -602,7 +563,6 @@ a {
     width: 300px;
 }
 .map {
-    /*margin-top: 20px;*/
     margin-bottom: 15px;
 }
 /*-------------------------------------------*/
@@ -619,24 +579,20 @@ a {
     flex-direction: column;
     justify-content: space-between;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    /*margin-bottom: 86px;*/
     min-height: 368px;
 }
-
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 
 /*стили FOOTER*/
 
-.footer-navi {
-    /*justify-content: space-between;*/
-    /*margin-left: auto;*/
-}
 .block-footer-logo {
     list-style: none;
     display: flex;
     list-style: none;
     margin:0;
     padding:0;
-    /*width:220px;*/
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 .navi-up {
@@ -653,8 +609,7 @@ a {
 .block-footer-logo a {
     display: inline-block;
     width: 220px;
-    /*min-height: 63px;*/
-  text-align: center;
+    text-align: center;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -672,7 +627,6 @@ a {
     font-size: 18px;
     line-height: 20px;
     color:#ffffff;
-    /*width: 120px;*/
     text-align: right;
     text-align: bottom;
     padding-top:30px;
@@ -717,7 +671,6 @@ a {
     margin:0;
     padding:0;
     align-items: flex-start;
-    /*margin-left: auto;*/
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 
 }
@@ -733,9 +686,7 @@ a {
     text-align: right;
     padding-top: 36px;
 }
-/*.navi-middle li:last-child {
-    text-align: right;
-}*/
+
 .navi-middle li:not(:first-of-type) {
     margin-left: 62px;
 }
@@ -758,19 +709,15 @@ a {
 }
 /*------------------------------------------*/
 .social-buttons {
-    /*list-style: none;*/
     display: flex;
     justifu-content: center;
     margin: 0;
-    /*align-items: center;*/
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    /*width: 132px;*/
     margin-top: 35px;
     margin-left: 50px;
 }
 
 .social-btn {
-    /*position: relative;*/
     width: 41px;
     height: 41px;
     margin-right: 5px;
@@ -784,7 +731,6 @@ a {
     margin-right: 0;
 }
 .icon-vk {
-    /*position: absolute;*/
     background-image: url("../img/icon-vk.svg");
 }
 .facebook {
@@ -825,7 +771,6 @@ a {
     margin-right: 14px;
 }
 .copyright-email {
-    /*margin-left: 50px;*/
     margin-top: 38px;
     margin-bottom: 28px;
     margin-right: 0px;
@@ -1260,23 +1205,17 @@ a {
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
     }
 .catalog-card {
-
     position: relative;
-    /*display: inline-block;*/
     width: 218px;
-    /*margin-right: 20px;*/
     margin-bottom: 20px;
     border: 1px solid #ccc;
     line-height: 20px;
-    /*font-weight:bold;*/
     text-align: center;
 }
 .catalog-card:hover {
     box-shadow: 0px 0px 10px 0px #b2b6be,1px 10px 20px 0px #b2b6be;
 }
-/*.catalog-card:nth-of-type(3n) {
-    margin-right : 0px;
-}*/
+
 .catalog-card:not(:nth-of-type(3n)) {
     margin-right: 20px;
 }
@@ -1299,7 +1238,7 @@ a {
 .catalog-card .flag-new {
     background: url("../img/new-flag.png") no-repeat 0 0;
 }
-.catalog-card .active{
+.catalog-card .active {
     position:absolute;
     top:0;
     left:0;
@@ -1310,7 +1249,7 @@ a {
     z-index:10;
 }
 .active .buy,
-.active .in-bookmark{
+.active .in-bookmark {
     display:block;
     width:129px;
     margin:0 auto;
@@ -1338,11 +1277,10 @@ a {
     border: 3px solid #c1c6cd;
     color: #c1c6cd;
 }
-.catalog-card .active{
-    /*display:none;*/
+.catalog-card .active {
     opacity: 0;
 }
-.catalog-card:hover .active{
+.catalog-card:hover .active {
     opacity: 1;
 }
 .catalog-card .image {
@@ -1352,21 +1290,19 @@ a {
 .image img {
     max-width: 100%;
 }
-.card-title h3{
+.card-title h3 {
     min-height: 40px;
     padding: 0 25px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
-.card-title b{
+.card-title b {
     display: block;
 }
 .catalog-card .old-price {
     min-height: 20px;
     margin-top: 15px;
     margin-bottom: 10px;
-    /*color:#999;*/
-    /*text-decoration:line-through;*/
 }
 .catalog-card .new-price {
     position: relative;
@@ -1378,7 +1314,7 @@ a {
     background: #ee3643;
     border-radius: 3px;
 }
-.catalog-card .new-price:after{
+.catalog-card .new-price:after {
     content:"";
     position:absolute;
     top:0;
@@ -1416,7 +1352,6 @@ a {
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
-    /*text-align: center;*/
 }
 .card-title .old-price {
     color: #999999;
@@ -1435,28 +1370,23 @@ a {
     background-color: #ee3643;
 }
 /*--------------------------------------------------------*/
-/*--------------------------------------------------------*/
-.buy-finish {
-    display: none;
-}
-/*------------------------------------------*/
-.modal-map {
-    display: none;
-}
-/.write-us {
-    display: none;
-}
-/*------------------------------------------*/
-/*------------------------------------------*/
-/*------------------------------------------*/
+
+/************************************************/
+/*Всплывающие окна*/
+
 .modal-map {
 
     width: 940px;
     height: 443px;
-    margin-top: -800px;
-    box-shadow: 0 0px 20px 5px rgba(0, 0, 0, 0.5);
-    position: relative;
+
+    bottom: 355px;
+    left: 50%;
+    margin-left: -470px;
+
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
 }
+/*------------------------------------*/
 .btn-close {
     content: "";
     position: absolute;
@@ -1471,20 +1401,21 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-    /*-----*/
+/*------------------------------------*/
 .write-us {
     display: flex;
-    /justify-content: center;
-    margin:0 auto;
-    position: relative;
+    justify-content: center;
+    position: fixed;
+
+    bottom: 190px;
+    left: 50%;
+    margin-left: -300px;
+
     width: 600px;
     padding-top: 50px;
-    margin-top: -600px;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-    /border: 2px solid red;
-    background-color: white;
-    box-shadow: 0 -5px 0 0 #ed3543;
 
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5),0 -6px 0 0 #ed3543;
+    background-color: white;
 }
 .name-email {
     display: flex;
@@ -1511,7 +1442,6 @@ a {
     align-items: center;
     /*background: rgba(0, 128, 0, 0.2);
     box-shadow: 0 0 0 3px green;*/
-    /*max-width: 460px;*/
 }
 
 .data-and-letter input[type="text"],
@@ -1528,7 +1458,6 @@ a {
 }
 
 .write-us-form p {
-    /*display: flex;*/
     margin: 0;
     margin-bottom: 20px;
 }
@@ -1551,6 +1480,7 @@ a {
     /min-height: 96px;
     background-color: rgba(181,181,181,0.2);
     width: 600px;
+    padding: 0;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -1566,3 +1496,92 @@ a {
     border-radius: 3px;
     marging-top: 32px;
 }
+/*------------------------------------*/
+.buy-finish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 30;
+    top: 423px;
+    left: 50%;
+    margin-left: -300px;
+
+    width: 600px;
+    /padding-top: 50px;
+
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5),0 -6px 0 0 #ed3543;
+    background-color: white;
+}
+.buy-finish h2 {
+    margin: 50px 70px;
+    padding-top: 10px;
+    padding-left: 108px;
+    /*background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;*/
+    position: relative;
+}
+.buy-finish h2::before {
+    content: "";
+
+    position: absolute;
+    top: -10px;
+    left:0px;
+
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/icon-mark.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+.buy-finish-send {
+    box-sizing: border-box;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 70px;
+    background-color: rgba(181,181,181,0.2);
+    /*background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;*/
+}
+.order {
+    box-sizing: border-box;
+    width: 220px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ed3543;
+    border-radius: 3px;
+    text-align: center;
+}
+.continue-shopping {
+    box-sizing: border-box;
+    width: 220px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------*/ /*--------------------------------------------------------*/
+/.buy-finish {
+    display: none;
+}
+/*------------------------------------------*/
+/.modal-map {
+    display: none;
+}
+/.write-us {
+    display: none;
+}
+/*------------------------------------------*/

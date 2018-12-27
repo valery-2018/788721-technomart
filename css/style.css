@@ -145,10 +145,10 @@ a {
     background-position: 0 0;
     opacity: 0.6;
 }
-.header-top span {
+.header-top div {
     position: relative;
 }
-.input-search:focus+span::before {
+.input-search:focus+div::before {
     content: "";
 
     position: absolute;
@@ -982,6 +982,7 @@ a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
+    font-weight: 400;
     margin-left: 30px;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -1370,7 +1371,91 @@ a {
     background-color: #ee3643;
 }
 /*--------------------------------------------------------*/
+/******************* Пагинация*********************/
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
 
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  padding-left: 240px;
+  padding-top: 12px;
+  padding-bottom: 60px;
+}
+
+.pagination-item {
+  margin-right: 10px;
+
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 10px 0px;
+  width: 37px;
+  color: #000000;
+  background-color: #ffffff;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px
+}
+.next-page a {
+  width: 138px;
+}
+
+.pagination-item a:hover {
+    border-color: #bdc5c9;
+}
+.pagination-item a:active {
+    border-color: #ed3543;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+
+  background-color: #ed3543;
+}
+
+
+/***************** Текст о перфораторах *****************/
+
+.info-about-perforators {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.fon-about-perforators {
+    background-color: #f2f6f8;
+}
+.about-perforators {
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-bottom: 20px;
+
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+}
+.info-about-perforators p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 23px;
+    margin-bottom: 70px;
+}
+/************************************************/
 /************************************************/
 /*Всплывающие окна*/
 
@@ -1574,14 +1659,14 @@ a {
 
 
 /*--------------------------------------------------------*/ /*--------------------------------------------------------*/
-/.buy-finish {
+.buy-finish {
     display: none;
 }
 /*------------------------------------------*/
-/.modal-map {
+.modal-map {
     display: none;
 }
-/.write-us {
+.write-us {
     display: none;
 }
 /*------------------------------------------*/

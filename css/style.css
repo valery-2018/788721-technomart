@@ -56,7 +56,7 @@ a {
     outline: 1px solid black;/*визуализатор блоков 2-й уровень*/
   }
 .logo {
-    width:220px;
+    width:244px;
     text-align: center;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 24px;
@@ -65,7 +65,7 @@ a {
     text-transform: uppercase;
     background-color: #ed3543;
     box-shadow: 0 5px 0 0 #b42833;
-    padding-top: 13px;
+    padding-top: 11px;
 }
 .logo[href]:hover {
     background-color: #ca2b36;
@@ -98,7 +98,7 @@ a {
     line-height: 18px;
     color: #ffffff;
     padding-left: 0px;
-    padding-top: 14px;
+    padding-top: 16px;
 }
 .search {
     position: relative;
@@ -107,8 +107,8 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
-    left:16px;
+    top: 12px;
+    left:18px;
 
     width: 17px;
     height: 17px;
@@ -121,8 +121,8 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
-    left:16px;
+    top: 12px;
+    left:18px;
 
     width: 17px;
     height: 17px;
@@ -135,8 +135,8 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
-    left:16px;
+    top: 12px;
+    left:18px;
 
     width: 17px;
     height: 17px;
@@ -145,15 +145,15 @@ a {
     background-position: 0 0;
     opacity: 0.6;
 }
-.header-top div {
+.header-top label {
     position: relative;
 }
-.input-search:focus+div::before {
+.input-search:focus+label::before {
     content: "";
 
     position: absolute;
-    top: -30px;
-    left:16px;
+    top: -29px;
+    left:18px;
 
     width: 17px;
     height: 17px;
@@ -167,9 +167,9 @@ a {
 .header-top .bookmarks,
 .header-top .basket {
 
-    padding-top: 14px;
-    padding-left: 17px;
-    width: 150px;
+    padding-top: 13px;
+    padding-left: 18px;
+    width: 148px;
     text-align: center;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
@@ -193,8 +193,8 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
-    left:17px;
+    top: 12px;
+    left:19px;
 
     width: 14px;
     height: 16px;
@@ -207,7 +207,7 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
+    top: 12px;
     left:17px;
 
     width: 14px;
@@ -221,7 +221,7 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
+    top: 12px;
     left:17px;
 
     width: 14px;
@@ -238,7 +238,7 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
+    top: 12px;
     left:19px;
 
     width: 14px;
@@ -252,7 +252,7 @@ a {
   content: "";
 
   position: absolute;
-  top: 14px;
+  top: 12px;
   left:19px;
 
   width: 14px;
@@ -266,7 +266,7 @@ a {
   content: "";
 
   position: absolute;
-  top: 14px;
+  top: 12px;
   left:19px;
 
   width: 14px;
@@ -278,9 +278,9 @@ a {
 }
 
 .header-top .button-order {
-    width: 150px;
+    width: 167px;
     text-align: center;
-    padding-top: 14px;
+    padding-top: 13px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
@@ -306,10 +306,10 @@ a {
     font-style: italic;
     color: #ee3643;
     font-weight: 400;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 45px;
-    margin-right: 70px;
+    padding-top: 49px;
+    padding-left: 51px;
+    padding-bottom: 41px;
+    margin-right: 72px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 .header-middle .phone-address {
@@ -320,7 +320,7 @@ a {
     flex-direction: column;
     align-items: center;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    margin-right: 70px;
+    margin-right: 46px;
 }
 .header-middle .phone {
     display: block;
@@ -333,8 +333,9 @@ a {
     color: #ee3643;
     font-weight: 400;
     border: 3px solid #ffffff;
-    padding: 7px 50px 7px 70px;
-    margin-top: 42px;
+    padding: 7px 50px 7px 71px;
+    margin-top: 46px;
+    margin-bottom: -5px;
 }
 .phone::before {
     content: "";
@@ -363,7 +364,7 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
-    padding-top: 42px;
+    padding-top: 45px;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
     margin-left: 0 auto;
     width: 282px;
@@ -418,10 +419,10 @@ a {
     color: #000000;
     font-weight: 400;
     background-color: #ffffff;
-    padding: 12px 24px 12px 24px;
+    padding: 13px 25px 12px 24px;
 }
 .client-navi .button-enter {
-    padding-left: 50px;
+    padding-left: 48px;
 }
 .client-navi .button-registration {
     margin-left: 10px;
@@ -443,7 +444,7 @@ a {
     margin: 0;
     padding: 0;
     max-width: 940px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
@@ -467,10 +468,10 @@ a {
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
-    padding-top:22px;
-    padding-bottom: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top:21px;
+    padding-bottom: 17px;
+    padding-left: 31px;
+    padding-right: 31px;
 }
 .navi-top a:hover {
     background-color: #293349;
@@ -492,33 +493,47 @@ a {
 
 }
 
-.company h2,
+.company h2 {
+    text-transform: uppercase;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    margin-bottom:5px;
+}
 .contacts h2 {
     text-transform: uppercase;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
+    font-weight: 400;
     color: #000000;
     margin: 0;
     padding: 0;
+    margin-bottom:6px;
 }
 .company p,
 .contacts p {
     text-transform: none;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 24px;
     font-weight: 400;
     color: #000000;
     display: block;
-    padding-bottom: 0px;
     margin: 0;
     padding: 0;
+    margin-bottom: 0px;
 }
+
 .company ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: -10px;
 }
 .company li {
     text-transform: none;
@@ -526,7 +541,9 @@ a {
     font-size: 18px;
     line-height: 40px;
     color: #000000;
-    padding-left: 34px;
+    padding-left: 36px;
+    padding-top: -6px;
+    margin-top: 0px;
     position: relative;
 }
 .company li::before {
@@ -543,7 +560,7 @@ a {
 .company .batton-about-company,
 .contacts .batton-email {
     display: inline-block;
-    max-width: 220px;
+    min-width: 220px;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -553,8 +570,8 @@ a {
     color: #ffffff;
     background-color: #ed3543;
     border-radius: 2px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 12px;
+    padding-bottom: 10px;
 }
 .company .batton-about-company {
     width: 220px;
@@ -563,6 +580,7 @@ a {
     width: 300px;
 }
 .map {
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 /*-------------------------------------------*/
@@ -579,7 +597,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    min-height: 368px;
+    min-height: 370px;
 }
 /*-------------------------------------------------------------*/
 /*-------------------------------------------------------------*/
@@ -597,7 +615,7 @@ a {
 }
 .navi-up {
     display: flex;
-    max-width: 570px;
+    max-width: 560px;
     flex-wrap: wrap;
     list-style: none;
     margin:0;
@@ -617,8 +635,8 @@ a {
     text-transform: uppercase;
     background-color: #ed3543;
     box-shadow: 0 5px 0 0 #b42833;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 /*-------------------------------------------------------------*/
 .navi-up a {
@@ -629,12 +647,13 @@ a {
     color:#ffffff;
     text-align: right;
     text-align: bottom;
-    padding-top:30px;
-    padding-bottom: 8px;
+    padding-top:38px;
+    padding-bottom: 0px;
     background-color: #31415b;
 }
+
 .navi-up li:not(:first-of-type) {
-    margin-left: 62px;
+    margin-left: 60px;
 }
 .navi-up a:hover {
     text-decoration: underline;
@@ -688,7 +707,7 @@ a {
 }
 
 .navi-middle li:not(:first-of-type) {
-    margin-left: 62px;
+    margin-left: 60px;
 }
 .navi-middle a:hover {
     text-decoration: underline;
@@ -800,14 +819,14 @@ a {
     flex-direction: column;
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
     margin: 0 auto;
-    max-width: 282px;
+    min-width: 300px;
 
 }
 .client-account-login {
     display: flex;
     margin:0;
     padding:0;
-    padding-top: 42px;
+    padding-top: 46px;
 }
 .client-account-login .client-name {
     display: block;
@@ -818,7 +837,10 @@ a {
     font-weight: 400;
     background-color: #ffffff;
     /*margin-top: 42px;*/
-    padding: 12px 57px 12px 40px;
+    padding: 12px 0;
+    padding-right: 67px;
+    padding-left: 50px;
+
     /*width: 282px;*/
     white-space: nowrap;
     position: relative;
@@ -832,8 +854,8 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
-    left:14px;
+    top: 12px;
+    left:16px;
 
     width: 20px;
     height: 18px;
@@ -846,8 +868,8 @@ a {
     content: "";
 
     position: absolute;
-    top: 14px;
-    left:14px;
+    top: 12px;
+    left:16px;
 
     width: 20px;
     height: 18px;
@@ -856,7 +878,10 @@ a {
     background-position: 0 0;
 }
 
-.client-name::after {
+.icon-exit {
+  position: relative;
+}
+.icon-exit::after {
 
     content: "";
 
@@ -870,7 +895,7 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.client-name:hover::after {
+.icon-exit:hover::after {
 
     content: "";
 
@@ -894,26 +919,26 @@ a {
 .order-and-account .btn-order {
     display: inline-block;
     text-decoration: underline;
-    padding-top: 10px;
-    margin-left: 20px;
+    padding-top: 8px;
+    margin-left: 22px;
     margin-right: 32px;
     position: relative;
 }
 .btn-order::after {
     content: "";
     position: absolute;
-    top: 17px;
-    left: 88px;
+    top: 15px;
+    left: 90px;
 
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
     background-color: #32425c;
 }
 .order-and-account .btn-account {
     display: inline-block;
     text-decoration: underline;
-    padding-top: 10px;
+    padding-top: 8px;
 
 }
 .order-and-account .btn-order,
@@ -938,7 +963,7 @@ a {
 /*-------------------------*/
 /*-------------------------*/
 .header {
-    margin-bottom: 22px;
+    margin-bottom: 26px;
 }
 .breadcrumbs {
     list-style: none;
@@ -958,6 +983,26 @@ a {
     font-weight: 400;
     color: #000000;
 }
+.breadcrumbs .home {
+    display: block;
+    position: relative;
+}
+.breadcrumbs .home::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0px;
+
+  width: 15px;
+  height: 12px;
+
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+
 .breadcrumbs li:not(:first-of-type) {
     margin-left: 40px;
     position: relative;
@@ -975,6 +1020,9 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.breadcrumbs li:nth-of-type(2) {
+  margin-left: 55px;
+}
 /*-------------------------*/
 .perforatory {
     text-transform: uppercase;
@@ -983,9 +1031,9 @@ a {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
-    margin-left: 30px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-left: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
@@ -1007,13 +1055,13 @@ a {
     padding: 0;
 }
 .filter-option {
-    /background: rgba(0, 128, 0, 0.2);
-    /box-shadow: 0 0 0 3px green;
-    margin-bottom: 26px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+    margin-bottom: 21px;
     padding-left: 34px;
 }
 .filter-option:last-of-type {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 .fieldset {
     border: 0;
@@ -1027,10 +1075,10 @@ a {
 .line {
     width: 220px;
     border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 .fieldset:last-of-type {
-    margin-bottom: 60px;
+    margin-bottom: 53px;
 }
 .legend {
     text-transform: uppercase;
@@ -1039,7 +1087,7 @@ a {
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 .label {
     text-transform: uppercase;
@@ -1192,7 +1240,7 @@ a {
     border: 1px solid #e5e5e5;
     border-radius: 2px;
     background-color: #ffffff;
-    padding: 13px 40px;
+    padding: 10px 38px;
 }
 /*-------------------------*/
 .catalog-list {
@@ -1255,7 +1303,7 @@ a {
     width:129px;
     margin:0 auto;
     margin-bottom:7px;
-    padding:7px 0;
+    padding:9px 0;
     border:3px solid #63a53d;
     border-bottom-color:#367315;
     background-color:#63a53d;
@@ -1295,7 +1343,7 @@ a {
     min-height: 40px;
     padding: 0 25px;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: -5px;
 }
 .card-title b {
     display: block;
@@ -1303,12 +1351,12 @@ a {
 .catalog-card .old-price {
     min-height: 20px;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .catalog-card .new-price {
     position: relative;
     width: 80px;
-    margin: 10px auto;
+    margin: 8px auto;
     margin-bottom: 20px;
     padding: 10px 30px;
     color: white;
@@ -1386,7 +1434,7 @@ a {
 }
 
 .pagination-item {
-  margin-right: 10px;
+  margin-right: 8px;
 
 }
 
@@ -1444,14 +1492,14 @@ a {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
-    margin-top: 65px;
-    margin-bottom: 20px;
+    margin-top: 63px;
+    margin-bottom: 15px;
 
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 .info-about-perforators p {
     font-family: "PT Sans", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 23px;
     margin-bottom: 70px;
 }
@@ -1464,7 +1512,7 @@ a {
     width: 940px;
     height: 443px;
 
-    bottom: 355px;
+    bottom: 267px;
     left: 50%;
     margin-left: -470px;
 
@@ -1476,8 +1524,8 @@ a {
     content: "";
     position: absolute;
 
-    width: 27px;
-    height: 27px;
+    width: 21px;
+    height: 21px;
 
     top:5px;
     right:5px;
@@ -1485,6 +1533,8 @@ a {
     background-image: url("../img/icon-close.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
 }
 /*------------------------------------*/
 .write-us {
@@ -1580,6 +1630,7 @@ a {
     background-color: #ed3543;
     border-radius: 3px;
     marging-top: 32px;
+    border: none;
 }
 /*------------------------------------*/
 .buy-finish {
@@ -1658,7 +1709,8 @@ a {
 }
 
 
-/*--------------------------------------------------------*/ /*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
 .buy-finish {
     display: none;
 }

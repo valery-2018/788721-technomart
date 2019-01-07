@@ -1048,6 +1048,179 @@ a {
 .filters {
     outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
+/*--------------------------*/
+.price {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.box {
+  padding: 20px 20px;
+  background: #f7f2ec;
+  width: 220px;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-bottom: 10px;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+.slider-left {
+  position: absolute;
+  top: 22.5px;
+  left: 21px;
+
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+
+  border: 8px solid #ffffff;
+  background: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #e0ddd8;
+}
+/*---------------------------------------*/
+/*---------------------------------------*/
+
+input[type=range] {
+  -webkit-appearance: none;
+  padding: 0;
+  /margin: 18px 0;
+  /width: 100%;
+  width: 170px;
+
+}
+input[type=range]:focus {
+  outline: none;
+}
+/*------------для движка WEBKIT, BLINK-------------*/
+input[type=range]::-webkit-slider-runnable-track {
+  width:  170px;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  /*/box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
+  background: #00ca74;
+  border-radius: 0px;
+  border: 0.2px solid #00ca74;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0 2px 0 0 #e0ddd8;
+  border: 8px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ababab;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9.5px;
+  padding: 0px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #00ca74;
+}
+/*------------для движка GEKO------------------------*/
+input[type=range]::-moz-range-track {
+  width: 170px;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
+  background: #2a6495;
+  border-radius: 0px;
+  border: 0.2px solid #00ca74;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0 2px 0 0 #e0ddd8;
+  border: 8px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ababab;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+/*------------для движка TRIDENT------------------------*/
+input[type=range]::-ms-track {
+  width: 170px;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 20px ;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #00ca74;
+  border-radius: 0px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #d7dbdd;
+  border-radius: 0px;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0 2px 0 0 #e0ddd8;
+  border: 8px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ababab;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
+	display: none;
+}
+/*---------------------------------------*/
+/*----------- Выбираем цену -----------*/
+.price-range {
+    /box-sizing: border-box;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    /margin-top: 10px;
+    /padding: 10px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+}
+.origin,output {
+    /display: inline-block;
+    /box-sizing: border-box;
+    width:94px;
+    /height: 37px;
+    text-align: center;
+    background: #f7f2ec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    font-family: "P TSans";
+
+}
+.dash {
+    padding-top: 10px;
+}
+
+
+/*--------------------------*/
+
 
 .filters ul {
     list-style: none;

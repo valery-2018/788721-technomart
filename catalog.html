@@ -77,6 +77,21 @@
      <div class="filters-and-cads centering">
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
+        <!-- ----range -->
+        <h3 class="price">Цена</h3>
+        <form action="/echo" method="post" oninput="maximumpriceoutput.value=selectedpriceinput.value">
+          <div class="box">
+              <input style="width:180px" type="range" id="selectedpriceinput" name="selectedpriceinput" min="0" max="34000" value="30000" step="200">
+              <div class="slider-left"></div>
+          </div>
+
+          <div class="price-range">
+              <div class="origin">0</div>
+              <div class="dash">—</div>
+              <output name="maximumpriceoutput"></output>
+          </div>
+        </form>
+        <!-- ---------- -->
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="fieldset">
             <legend class="legend">Производители:</legend>

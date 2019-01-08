@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
  </head>
@@ -15,8 +14,8 @@
              <div class="header-top centering">
                 <a class="logo header-logo" href="index.html">Техномарт</a>
                 <form class="search" action="https://echo.htmlacademy.ru">
-                  <input class="input-search" style="height:40px; width:220px" type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
-                <label></label>
+                    <input class="input-search" style="height:40px; width:220px" type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
+                    <label for="search-field"></label>
                 </form>
                 <a class="bookmarks" href="#">Закладки: 0</a>
                 <a class="basket" href="#">Корзина: 0</a>
@@ -76,17 +75,18 @@
       <!-- Закрашено красным цветом -->
       <!-- ******************************************************* -->
       <div class="filter-sorting centering">
-        <div class="title-filter">Фильтр</div>
-        <div class="title-sorting">Сортировка
-          <ul class="sort-by">
-            <li><a class="active" href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
-          </ul>
-        </div>
-        <div class="arrows">
-          <a class="arrow-up active" href="#"></a>
-          <a class="arrow-down" href="#"></a>
+        <h3 class="title-filter">Фильтр</h3>
+        <div class="fon-for-sorting">
+            <h3 class="title-sorting">Сортировка</h3>
+            <div class="sort-by">
+                <a class="active" href="#">По цене</a>
+                <a href="#">По типу</a>
+                <a href="#">По функционалу</a>
+            </div>
+            <div class="arrows">
+                <a class="arrow-up active" href="#"></a>
+                <a class="arrow-down" href="#"></a>
+            </div>
         </div>
       </div>
 

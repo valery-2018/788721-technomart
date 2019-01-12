@@ -488,7 +488,7 @@ a {
 	justify-content: space-between;
 	flex-wrap: wrap;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .landing-point {
 	width: 300px;
@@ -585,13 +585,13 @@ a {
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #ee3643;
-	padding: 10px 47px;
 	border-radius: 3px;
 }
 .btn-catalog {
 	position: absolute;
 	top: 205px;
 	right: 402px;
+  padding: 10px 47px;
 }
 .btn:hover {
 	background-color: #ca2c37;
@@ -735,21 +735,24 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 21px;
+	padding-left: 25px;
 	padding-right: 25px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 .header-popular-goods h2,
 .header-popular-manufacturers h2 {
-	margin-top: 33px;
-	margin-bottom: 33px;
+	margin-top: 30px;
+	margin-bottom: 30px;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
     color: #32425c;
     font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
+}
+.btn-goods {
+  padding: 10px 55px;
 }
 /*-----------*/
 .catalog-list-index {
@@ -759,13 +762,16 @@ a {
     flex-wrap: wrap;
     list-style: none;
     width: 940px;
-    margin: 20px auto;
-    /*outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    margin: 0px auto;
+    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
 }
 .catalog-card-index:not(:nth-of-type(4n)) {
     margin-right: 20px;
 }
 /*-----------*/
+.btn-manufacturers {
+  padding: 10px 69px;
+}
 .manufacturers-list {
 	display: flex;
 	justify-content: space-between;
@@ -801,7 +807,7 @@ a {
 /*++++++++++++++++++*/
 .service {
 	background-color: #f4f8fa;
-	margin-bottom: 45px;
+	margin-bottom: 80px;
 }
 .service h2 {
     text-transform: uppercase;
@@ -813,7 +819,7 @@ a {
 	padding-top: 40px;
 	padding-bottom: 0px;
 }
-.service-header {
+.service p {
     text-transform: none;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -823,7 +829,82 @@ a {
     display: block;
     margin: 0;
     padding: 0;
-    margin-bottom: 47px;
+    margin-bottom: 52px;
+}
+/********/
+.service-slider {
+	display: flex;
+	justify-content: flex-start;
+}
+.slide-tabs {
+	margin-left: 28px;
+	position: relative;
+}
+.slide-tabs h3 {
+	margin: 0;
+	margin-top: 17px;
+	margin-left: 52px;
+}
+.slide-tabs p {
+	padding-left: 52px;
+	padding-top: 23px;
+}
+.service-slider_control {
+	width: 198px;
+	padding: 21px;
+	background-color: #32425C;
+	color: #ffffff;
+	border-bottom: 1px solid black;
+	font-size: 21px;
+	font-weight: bold;
+	display: block;
+}
+
+.service-slider_controls {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 18px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.service-slider_controls:after {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 270px;
+	right: 0px;
+	top: -47px;
+	background-image: url("../img/service-shadow.png");
+	background-repeat: no-repeat;
+}
+.slide-delivery:after {
+	position: absolute;
+	content: '';
+	width: 468px;
+	height: 251px;
+	left: 200px;
+	top: 41px;
+	background-image: url('../img/car-shadow.png');
+	background-repeat: no-repeat;
+}
+.service-slider_control-active {
+	background-color: #ffffff;
+	color: #32425C;
+}
+.service-slider_control-active:hover {
+	background-color: #293449;
+	color: #ffffff;
+}
+.service-slider_control:hover {
+	background-color: #293449;
+}
+.service h3 {
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+  color: #32425c;
 }
 
 

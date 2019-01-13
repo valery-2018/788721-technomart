@@ -836,20 +836,20 @@ a {
 	display: flex;
 	justify-content: flex-start;
 }
-.slide-tabs {
+.slide-storage {
 	margin-left: 28px;
 	position: relative;
 }
-.slide-tabs h3 {
+.slide-storage  h3 {
 	margin: 0;
 	margin-top: 17px;
 	margin-left: 52px;
 }
-.slide-tabs p {
+.slide-storage  p {
 	padding-left: 52px;
 	padding-top: 23px;
 }
-.service-slider_control {
+.service-slider-button {
 	width: 198px;
 	padding: 21px;
 	background-color: #32425C;
@@ -860,7 +860,7 @@ a {
 	display: block;
 }
 
-.service-slider_controls {
+.service-slider-buttons {
 	list-style: none;
 	padding-left: 0;
 	margin-top: 18px;
@@ -868,7 +868,7 @@ a {
 	position: relative;
 }
 
-.service-slider_controls:after {
+.service-slider-buttons:after {
 	position: absolute;
 	content: '';
 	width: 10px;
@@ -888,15 +888,15 @@ a {
 	background-image: url('../img/car-shadow.png');
 	background-repeat: no-repeat;
 }
-.service-slider_control-active {
+.service-slider-button-active {
 	background-color: #ffffff;
 	color: #32425C;
 }
-.service-slider_control-active:hover {
+.service-slider-button-active:hover {
 	background-color: #293449;
 	color: #ffffff;
 }
-.service-slider_control:hover {
+.service-slider-button:hover {
 	background-color: #293449;
 }
 .service h3 {
@@ -2323,6 +2323,24 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     background-color: rgba(255, 255, 255, 0);
 }
 /*------------------------------------*/
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .write-us {
     display: flex;
     justify-content: center;
@@ -2337,6 +2355,10 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
 
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5),0 -6px 0 0 #ed3543;
     background-color: white;
+}
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 .name-email {
     display: flex;

@@ -193,23 +193,22 @@
         <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
         <div class="service-slider">
-          <ul class="service-slider_controls">
-            <li><a class="service-slider_control service-slider_control-active" href="#">Доставка</a>
+          <ul class="service-slider-buttons">
+            <li><a class="service-slider-button sservice-slider-button-active" href="#">Доставка</a>
             </li>
-            <li><a class="service-slider_control" href="#">Гарантия</a>
+            <li><a class="service-slider-button" href="#">Гарантия</a>
             </li>
-            <li><a class="service-slider_control" href="#">Кредит</a>
+            <li><a class="service-slider-button" href="#">Кредит</a>
             </li>
           </ul>
 
-          <div id="delivery" class="slide-tabs slide-delivery">
+          <div id="delivery" class="slide-storage slide-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо
               <br>к Вашему подъезду совершенно бесплатно!
               <br>Ведь мы неплохо заработаем,
               <br>поднимая его на Ваш этаж!</p>
           </div>
-
         </div>
       </div>
     </div>
@@ -307,7 +306,7 @@
         <button class="btn-close map-close" type="button" aria-label="Закрыть"></button>
     </div>
 <!-- --------- -->
-    <div class="write-us">
+    <div class="modal write-us">
         <form class="write-us-form"                     action="https://echo.htmlacademy.ru" method="post">
             <div class="name-email">
                 <p class="data-and-letter">
@@ -329,5 +328,31 @@
         </form>
         <button class="btn-close write-us-close" type="button" aria-label="Закрыть"></button>
     </div>
+    <script>
+    var link = document.querySelector(".batton-email");
+    var popup = document.querySelector(".write-us");
+    var close = popup.querySelector(".write-us-close");
+    var form = popup.querySelector("form");
+    var name = popup.querySelector("[name=name]");
+    link.addEventListener("click", function (evt) {evt.preventDefault();
+      popup.classList.add("modal-show");
+      name.focus();
+  });
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+  form.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+  });
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
+    </script>
   </body>
 </html>

@@ -44,8 +44,7 @@ a {
     overflow: hidden;
 }
 /*-------------------------------------------------------*/
-/*---------------------------------------------------------*/
-/*---------------------------------------------------------*/
+
 /*стили HEADER*/
 
 .centering {
@@ -53,7 +52,7 @@ a {
     display: flex;
     margin:0 auto;
     padding: 0 10px;
-    outline: 1px solid black;/*визуализатор блоков 2-й уровень*/
+    /*outline: 1px solid black;визуализатор блоков 2-й уровень*/
   }
 .logo {
     width:244px;
@@ -73,7 +72,7 @@ a {
 .logo[href]:active {
     background-color: #ba2731;
 }
-/*----*/
+
 .header-top .input-search,
 .header-top .input-search:active {
     font-family: "Cuprum", Arial, sans-serif;
@@ -158,9 +157,8 @@ a {
     background-image: url("../img/icon-search-red.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    /*opacity: 0.6;*/
 }
-/**/
+
 
 .header-top .bookmarks,
 .header-top .basket {
@@ -292,12 +290,12 @@ a {
     background-color: #508534;
     color: #8b8e94;
 }
-    /*---------------------------------------------*/
 
 .header-middle .header-heading {
     margin: 0;
     padding: 0;
     display: flex;
+    min-width: 250px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
     line-height: 23px;
@@ -307,18 +305,19 @@ a {
     padding-top: 49px;
     padding-left: 51px;
     padding-bottom: 41px;
-    margin-right: 72px;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    margin-right: 19px;
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .header-middle .phone-address {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    min-width: 270px;
     flex-direction: column;
     align-items: center;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
-    margin-right: 67px;
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
+    margin-right: 50px;
 }
 .header-middle .phone {
     display: block;
@@ -334,6 +333,7 @@ a {
     padding: 7px 50px 7px 71px;
     margin-top: 46px;
     margin-bottom: -5px;
+    white-space: nowrap;
 }
 .phone::before {
     content: "";
@@ -363,9 +363,10 @@ a {
     padding: 0;
     display: flex;
     padding-top: 45px;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    padding-left: 18px;
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     margin-left: 0 auto;
-    width: 282px;
+    min-width: 282px;
 }
 .client-navi .button-enter {
   position: relative;
@@ -435,7 +436,6 @@ a {
     color: #c5c5c5;
     background-color: #ffffff;
 }
-/*--------------------------------------------------------*/
 
 .header-navi .navi-top {
     list-style: none;
@@ -449,7 +449,7 @@ a {
     justify-content: center;
     background-color: #31415b;
     box-shadow: 0 5px 0 0 #293349;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 
 .navi-top li:last-of-type {
@@ -478,11 +478,9 @@ a {
     background-color: #1d2639;
     color: #8b8e94;
 }
-/*--------------------------------------------------------*/
-/*--------------------------------------------------------*/
-/*--------------------------------------------------------*/
+
 /*стили MAIN*/
-/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
 .landing-block {
 	display: flex;
 	justify-content: space-between;
@@ -520,9 +518,7 @@ a {
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
-    /*text-transform: uppercase;*/
     font-family: "Cuprum", Arial, sans-serif;
-    /*font-weight: bold;*/
     top: 61px;
     left: 23px
 }
@@ -600,108 +596,105 @@ a {
 	background-color: #ba2732;
 }
 .landing-point h3 {
-    font-size: 24px;
-    line-height: 30px;
-    /*color: #ffffff;*/
-    color: #ffffff;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-weight: bold;
-    margin-top: 21px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 21px;
 	margin-bottom: 0px;
 	padding-left: 21px;
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 .point-info {
 	display: inline-block;
-    /box-sizing: border-box;
-    font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
-	/*color: #ffffff;*/
-    color: #ffffff;
+  color: #ffffff;
 	text-transform: uppercase;
-    text-align: center;
+  text-align: center;
 	min-width: 135px;
 	padding: 10px 0;
 	margin-left: 23px;
 	border-radius: 4px;
 }
 .materials {
-    background: #ffbf47 url("../img/icon-1.svg") no-repeat 213px 30px;
+  background: #ffbf47 url("../img/icon-1.svg") no-repeat 213px 30px;
 }
 .materials .flag {
-    position: relative;
-    top: -125px;
-    right: -240px;
-    width:60px;
-    height:60px;
-    text-indent:-1000px;
-    overflow:hidden;
-     z-index:20;
+  position: relative;
+  top: -125px;
+  right: -240px;
+  width:60px;
+  height:60px;
+  text-indent:-1000px;
+  overflow:hidden;
+  z-index:20;
 }
 .materials .flag-new{
-    background:url("../img/new-flag.png") no-repeat 0 0;
+  background:url("../img/new-flag.png") no-repeat 0 0;
 }
 .materials-info {
-    background-color: #e5e5e5;
-    opacity: 0.7;
-    color: #ffffff;
+  background-color: #e5e5e5;
+  opacity: 0.7;
+  color: #ffffff;
 }
 .materials-info:hover {
-    background-color: #cccccc;
-    opacity: 0.7;
+  background-color: #cccccc;
+  opacity: 0.7;
 }
 .materials-info:active {
-    background-color: #b2b2b2;
-    opacity: 0.7;
+  background-color: #b2b2b2;
+  opacity: 0.7;
 }
 .instruments {
 	background: #3bbce3 url("../img/icon-2.svg") no-repeat 195px 34px;
 }
 .instruments-info {
 	background-color: #e5e5e5;
-    opacity: 0.7;
+  opacity: 0.7;
 }
 .instruments-info:hover {
-    background-color: #cccccc;
-    opacity: 0.7;
+  background-color: #cccccc;
+  opacity: 0.7;
 }
 .instruments-info:active {
-    background-color: #b2b2b2;
-    opacity: 0.7;
+  background-color: #b2b2b2;
+  opacity: 0.7;
 }
 .machines {
 	background: #dc91d8 url("../img/icon-3.svg") no-repeat 190px 50%;
 }
 .machines-info {
-    background-color: #e5e5e5;
-    opacity: 0.7;
+  background-color: #e5e5e5;
+  opacity: 0.7;
 }
 .machines-info:hover {
-    background-color: #cccccc;
-    opacity: 0.7;
+  background-color: #cccccc;
+  opacity: 0.7;
 }
 .machines-info:active {
-    background-color: #b2b2b2;
-    opacity: 0.7;
+  background-color: #b2b2b2;
+  opacity: 0.7;
 }
 .discount {
 	background: #8ed78f url("../img/icon-4.svg") no-repeat 195px 50%;
 }
 
 .discount-info {
-    background-color: #e5e5e5;
-    opacity: 0.7;
+  background-color: #e5e5e5;
+  opacity: 0.7;
 }
 
 .discount-info:hover {
-    background-color: #cccccc;
-    opacity: 0.7;
+  background-color: #cccccc;
+  opacity: 0.7;
 }
 
 .discount-info:active {
-    background-color: #b2b2b2;
-    opacity: 0.7;
+  background-color: #b2b2b2;
+  opacity: 0.7;
 }
 
 .delivery {
@@ -710,23 +703,23 @@ a {
 }
 
 .delivery-info {
-    background-color: #e5e5e5;
-    opacity: 0.7;
+  background-color: #e5e5e5;
+  opacity: 0.7;
 }
 
 .delivery-info:hover {
-    background-color: #cccccc;
-    opacity: 0.7;
+  background-color: #cccccc;
+  opacity: 0.7;
 }
 
 .delivery-info:active {
-    background-color: #b2b2b2;
-    opacity: 0.7;
+  background-color: #b2b2b2;
+  opacity: 0.7;
 }
-/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
 .popular-goods,
 .popular-manufacturers {
-    flex-direction: column;
+  flex-direction: column;
 
 }
 .header-popular-goods,
@@ -744,31 +737,31 @@ a {
 .header-popular-manufacturers h2 {
 	margin-top: 30px;
 	margin-bottom: 30px;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #32425c;
-    font-family: "Cuprum", Arial, sans-serif;
-    text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
 }
 .btn-goods {
   padding: 10px 55px;
 }
-/*-----------*/
+
 .catalog-list-index {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    width: 940px;
-    margin: 0px auto;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 940px;
+  margin: 0px auto;
+  /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .catalog-card-index:not(:nth-of-type(4n)) {
-    margin-right: 20px;
+  margin-right: 20px;
 }
-/*-----------*/
+
 .btn-manufacturers {
   padding: 10px 69px;
 }
@@ -794,44 +787,43 @@ a {
 }
 
 .manufacturer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 145px;
-    width: 218px;
-    margin-bottom: 20px;
-    /border: 1px solid #ccc;
-    line-height: 20px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 145px;
+  width: 218px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  text-align: center;
 }
-/*++++++++++++++++++*/
+
 .service {
 	background-color: #f4f8fa;
 	margin-bottom: 80px;
 }
 .service h2 {
-    text-transform: uppercase;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #000000;
+  text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
 	padding-top: 40px;
 	padding-bottom: 0px;
 }
 .service p {
-    text-transform: none;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #000000;
-    display: block;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 52px;
+  text-transform: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 52px;
 }
-/********/
+
 .service-slider {
 	display: flex;
 	justify-content: flex-start;
@@ -888,6 +880,34 @@ a {
 	background-image: url('../img/car-shadow.png');
 	background-repeat: no-repeat;
 }
+.slide-guarantee:after {
+	position: absolute;
+	content: '';
+	width: 468px;
+	height: 251px;
+	left: 200px;
+	top: 45px;
+	background-image: url('../img/guarantee-shadow.png');
+	background-repeat: no-repeat;
+}
+
+.slide-credit:after {
+	position: absolute;
+	content: '';
+	width: 468px;
+	height: 251px;
+	left: 200px;
+	top: 45px;
+	background-image: url('../img/credit-shadow.png');
+	background-repeat: no-repeat;
+}
+
+.btn-slide-credit {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
 .service-slider-button-active {
 	background-color: #ffffff;
 	color: #32425C;
@@ -907,14 +927,11 @@ a {
   color: #32425c;
 }
 
-
-/*""""""""""""""""""""""""""""""""""""""""""""""*/
 .company-contacts {
-    margin-bottom: 87px;
-    display: flex;
-    justify-content: space-between;
-    min-height: 370px;
-
+  margin-bottom: 87px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 370px;
 }
 
 .company h2 {
@@ -1013,25 +1030,22 @@ a {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-/*-------------------------------------------*/
+
 .company {
     width: 540px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .contacts {
     width:300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     min-height: 370px;
 }
-/*-------------------------------------------------------------*/
-/*-------------------------------------------------------------*/
-/*-------------------------------------------------------------*/
 
 /*стили FOOTER*/
 
@@ -1041,7 +1055,7 @@ a {
     list-style: none;
     margin:0;
     padding:0;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .navi-up {
     display: flex;
@@ -1052,7 +1066,7 @@ a {
     margin:0;
     padding:0;
     margin-left: auto;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 
 .block-footer-logo a {
@@ -1069,19 +1083,13 @@ a {
     padding-top: 16px;
     padding-bottom: 16px;
 }
-/*-------------------------------------------------------------*/
-.navi-up a {
 
-    /*display: inline-block;*/
+.navi-up a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
     color:#ffffff;
     text-align: right;
-    /*text-align: bottom;
-    padding-top:38px;
-    padding-bottom: 0px;
-    background-color: #31415b;*/
 }
 
 .navi-up li:not(:first-of-type) {
@@ -1093,14 +1101,13 @@ a {
 .navi-up a:active {
     color: #919ba9;
 }
-/*---------------------------------------------------*/
-/*------------------------------------------*/
+
 .footer-middle {
     display: flex;
 }
 .footer-middle .address {
     display: flex;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     text-transform: none;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
@@ -1122,7 +1129,7 @@ a {
     margin:0;
     padding:0;
     align-items: flex-start;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 
 }
 .navi-middle a {
@@ -1132,7 +1139,6 @@ a {
     line-height: 20px;
     text-align: bottom;
     color:#ffd180;
-    /*width: 130px;*/
     background-color: #31415b;
     text-align: right;
     padding-top: 36px;
@@ -1147,8 +1153,7 @@ a {
 .navi-middle a:active {
     color: #92846c;
 }
-/*---------------------------------------------------*/
-/*------------------------------------------*/
+
 .footer-bottom-flex {
     justify-content: space-between;
 }
@@ -1156,14 +1161,14 @@ a {
     display: flex;
     margin-top: 38px;
     margin-bottom: 28px;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
-/*------------------------------------------*/
+
 .social-buttons {
     display: flex;
     justifu-content: center;
     margin: 0;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     margin-top: 35px;
     margin-left: 50px;
 }
@@ -1197,12 +1202,9 @@ a {
     background-color: #ed3543;
 }
 
-/*---------------------------------*/
-
-
 .footer-copyright {
     display: flex;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .footer-bottom .copyright-company,
 .footer-copyright p {
@@ -1238,9 +1240,7 @@ a {
 .copyright-developer .developer:active {
     color:#ed3543;
 }
-/*--------------------------------------------------------*/
-/*--------------------------------------------------------*/
-/*--------------------------------------------------------*/
+
 /*страница - CATALOG*/
 
 .header-top .basket-not-empty {/*для Java*/
@@ -1249,7 +1249,7 @@ a {
 .client-account {
     display: flex;
     flex-direction: column;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     margin: 0 auto;
     min-width: 300px;
 
@@ -1268,13 +1268,9 @@ a {
     color: #000000;
     font-weight: 400;
     background-color: #ffffff;
-    /*margin-top: 42px;*/
     padding: 12px 0;
     padding-right: 23px;
-    padding-left: 50px;
-
-    /*width: 282px;*/
-    white-space: nowrap;
+    padding-left: 46px;
     position: relative;
 }
 
@@ -1286,8 +1282,8 @@ a {
     content: "";
 
     position: absolute;
-    top: 12px;
-    left:16px;
+    top: 13px;
+    left:13px;
 
     width: 20px;
     height: 18px;
@@ -1300,8 +1296,8 @@ a {
     content: "";
 
     position: absolute;
-    top: 12px;
-    left:16px;
+    top: 13px;
+    left:13px;
 
     width: 20px;
     height: 18px;
@@ -1312,8 +1308,8 @@ a {
 
 .icon-exit {
     display: block;
-    width: 44px;
-    height: 44px;
+    width: 45px;
+    height: 45px;
     background-color: white;
     position: relative;
 }
@@ -1345,7 +1341,7 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-/*-------------------------*/
+
 .order-and-account {
     list-style: none;
     display: flex;
@@ -1356,7 +1352,7 @@ a {
     display: inline-block;
     text-decoration: underline;
     padding-top: 8px;
-    margin-left: 22px;
+    margin-left: 18px;
     margin-right: 32px;
     position: relative;
 }
@@ -1396,8 +1392,7 @@ a {
     color: #c5c5c5;
 }
 
-/*-------------------------*/
-/*-------------------------*/
+
 .header {
     margin-bottom: 20px;
 }
@@ -1406,8 +1401,8 @@ a {
     padding: 0;
     margin: 0;
     display: flex;
-    margin-bottom: 20px;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    margin-bottom: 22px;
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 
 .breadcrumbs a,
@@ -1459,10 +1454,10 @@ a {
 .breadcrumbs li:nth-of-type(2) {
   margin-left: 55px;
 }
-/*-------------------------*/
+
 .perforatory {
     text-transform: uppercase;
-    color: #32425c; /*здесь именно этот цвет по стайлгайду*/
+    color: #32425c;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -1470,14 +1465,14 @@ a {
     margin-left: 28px;
     margin-top: 30px;
     margin-bottom: 30px;
-
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
-.fon-perfo {
+.wrupp {
+    width: 940px;
     background-color: #f1f5f7;
     margin-bottom: 20px;
 }
-/*-------------------------*/
+
 .title-filter,
 .title-sorting {
     padding: 0;
@@ -1504,21 +1499,21 @@ a {
     padding-left:19px;
 }
 .fon-for-sorting {
-  display: flex;
-  background-color: #f7f2ec;
-  outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    display: flex;
+    background-color: #f7f2ec;
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 
 }
 .sort-by {
-  padding: 0;
-  margin: 0;
-  width: 354px;
-  margin-right: 30px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    padding: 0;
+    margin: 0;
+    width: 354px;
+    margin-right: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .sort-by a {
     display: block;
@@ -1531,7 +1526,7 @@ a {
     text-decoration: none;
     border-bottom: 1px dotted #acaaa5;
     border-color: #ed3543;
-    /outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .sort-by a:hover {
     color: #231f20;
@@ -1623,15 +1618,15 @@ a {
     left: 14px;
 
 }
-/*-----------------------------*/
+
 .filters-and-cads {
   justify-content: space-between;;
 }
 
 .filters {
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+  /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
-/*--------------------------*/
+
 .price {
   margin: 0;
   padding: 0;
@@ -1672,8 +1667,7 @@ a {
   border-radius: 50%;
   box-shadow: 0 2px 0 0 #e0ddd8;
 }
-/*---------------------------------------*/
-/*---------------------------------------*/
+
 
 input[type=range] {
   -webkit-appearance: none;
@@ -1692,7 +1686,6 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 2px;
   cursor: pointer;
   animate: 0.2s;
-  /*/box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
   background: #00ca74;
   border-radius: 0px;
   border: 0.2px solid #00ca74;
@@ -1718,7 +1711,6 @@ input[type=range]::-moz-range-track {
   height: 2px;
   cursor: pointer;
   animate: 0.2s;
-  /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
   background: #2a6495;
   border-radius: 0px;
   border: 0.2px solid #00ca74;
@@ -1773,7 +1765,6 @@ input[type=range]:focus::-ms-fill-upper {
 input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
 	display: none;
 }
-/*---------------------------------------*/
 /*----------- Выбираем цену -----------*/
 .price-range {
     width: 220px;
@@ -1806,9 +1797,6 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
 .dash {
     padding-top: 10px;
 }
-
-
-/*--------------------------*/
 
 
 .filters ul {
@@ -1980,8 +1968,6 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     background-position: 0 0;
    }
 
-  /*---------*/
-
   .filter-input:disabled + label,
   .filter-input:disabled + label::after,
   .filter-input:disabled + label::before,
@@ -2004,7 +1990,7 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     background-color: #ffffff;
     padding: 10px 38px;
 }
-/*-------------------------*/
+
 .catalog-list {
     padding: 0;
     margin: 0;
@@ -2013,7 +1999,7 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     list-style: none;
     width: 700px;
     margin: 20px auto;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     }
 .catalog-card,
 .catalog-card-index {
@@ -2158,7 +2144,6 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     border-left-color:#ee3643;
 }
 
-/**********/
 .catalog-card .buy,
 .catalog-card-index .buy {
     text-transform: uppercase;
@@ -2204,8 +2189,9 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     font-weight: 700;
     background-color: #ee3643;
 }
-/*--------------------------------------------------------*/
-/******************* Пагинация*********************/
+
+/* Пагинация */
+
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
@@ -2262,7 +2248,7 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
 }
 
 
-/***************** Текст о перфораторах *****************/
+/* Текст о перфораторах */
 
 .info-about-perforators {
     flex-direction: column;
@@ -2281,7 +2267,7 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     margin-top: 63px;
     margin-bottom: 15px;
 
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .info-about-perforators p {
     font-family: "PT Sans", Arial, sans-serif;
@@ -2289,8 +2275,7 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     line-height: 23px;
     margin-bottom: 70px;
 }
-/************************************************/
-/************************************************/
+
 /*Всплывающие окна*/
 
 .modal-map {
@@ -2473,7 +2458,7 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
 .btn-send:active {
     background-color: #ca2b36;
 }
-/*------------------------------------*/
+
 .buy-finish {
     display: flex;
     flex-direction: column;
@@ -2528,9 +2513,6 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
-    /*font-family: "Cuprum", Arial, sans-serif;
-    font-size: 12px;
-    line-height: 12px;*/
     padding: 10px 0px;
     text-transform: uppercase;
     color: #ffffff;
@@ -2556,13 +2538,10 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     text-align: center;
 }
 
-
-/*--------------------------------------------------------*/
-/*--------------------------------------------------------*/
 .buy-finish {
     display: none;
 }
-/*------------------------------------------*/
+
 /.modal-map {
     display: none;
 }

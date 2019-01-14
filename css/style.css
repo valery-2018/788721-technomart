@@ -2340,9 +2340,31 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     transform: translateY(0);
   }
 }
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 .write-us {
     display: flex;
+    display: none;
     justify-content: center;
     position: fixed;
 
@@ -2356,9 +2378,16 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5),0 -6px 0 0 #ed3543;
     background-color: white;
 }
+.modal-map {
+    display: none;
+}
+
 .modal-show {
   display: block;
   animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .name-email {
     display: flex;
@@ -2534,10 +2563,10 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     display: none;
 }
 /*------------------------------------------*/
-.modal-map {
+/.modal-map {
     display: none;
 }
-.write-us {
+/.write-us {
     display: none;
 }
 /*------------------------------------------*/

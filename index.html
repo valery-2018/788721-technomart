@@ -194,7 +194,7 @@
 
         <div class="service-slider">
           <ul class="service-slider-buttons">
-            <li><a class="service-slider-button sservice-slider-button-active" href="#">Доставка</a>
+            <li><a class="service-slider-button service-slider-button-active" href="#">Доставка</a>
             </li>
             <li><a class="service-slider-button" href="#">Гарантия</a>
             </li>
@@ -238,7 +238,7 @@
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами,
               <br>заехав в наш офис:</p>
-            <a class="map" href="#"><img src="img/map_small.jpg" width="300" height="158" alt="Карта"></a>
+            <a class="map contacts-button-map" href="#"><img src="img/map_small.jpg" width="300" height="158" alt="Карта"></a>
             <a class="batton  batton-email" href="#">Заблудились? Напишите нам!</a>
           </section>
         </div>
@@ -303,19 +303,19 @@
     <!--Всплывающие окна  -->
     <div class="modal modal-map">
         <img src="img/map-big.jpg" width="940" height="443" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <button class="btn-close map-close" type="button" aria-label="Закрыть"></button>
+        <button class="btn-close modal-close" type="button" aria-label="Закрыть"></button>
     </div>
 <!-- --------- -->
     <div class="modal write-us">
-        <form class="write-us-form"                     action="https://echo.htmlacademy.ru" method="post">
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="name-email">
                 <p class="data-and-letter">
                     <label for="name">Ваше имя:</label>
-                    <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                    <input id="name" type="text" name="myname" value="" placeholder="Имя Фамилия">
                 </p>
                 <p class="data-and-letter">
                     <label for="e-mail">Ваш e-mail:</label>
-                    <input id="e-mail" type="email" name="e-mail"       value="" placeholder="e-mail@example.com">
+                    <input id="e-mail" type="email" name="email" value="" placeholder="e-mail@example.com">
                 </p>
             </div>
             <div class="data-and-letter mail">
@@ -333,23 +333,72 @@
     var popup = document.querySelector(".write-us");
     var close = popup.querySelector(".write-us-close");
     var form = popup.querySelector("form");
-    var name = popup.querySelector("[name=name]");
+    var myname = popup.querySelector("[name=myname]");
+    var email = popup.querySelector("[name=email]");
+
+    var isStorageSupport = true;
+    var storage = "";
+
+    try {
+    storage = localStorage.getItem("myname");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
     link.addEventListener("click", function (evt) {evt.preventDefault();
       popup.classList.add("modal-show");
-      name.focus();
+      if (storage) {
+          myname.value = storage;
+          email.focus();
+      } else {
+       myname.focus();
+   }
   });
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
   });
   form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
+      if (!myname.value || !email.value) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("myname", myname.value);
+        }
+      }
   });
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+  var mapLink = document.querySelector(".contacts-button-map");
+
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
       }
     }
   });

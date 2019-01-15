@@ -2346,7 +2346,9 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
     transform: translateX(10px);
   }
 }
-
+.modal-map {
+    display: none;
+}
 .write-us {
     display: flex;
     display: none;
@@ -2362,9 +2364,7 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
 
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5),0 -6px 0 0 #ed3543;
     background-color: white;
-}
-.modal-map {
-    display: none;
+    z-index: 100;
 }
 
 .modal-show {
@@ -2433,8 +2433,6 @@ input[type=range]::-ms-tooltip { /* Скрываем "подсказку" */
 .send-write-us {
     display: flex;
     justify-content: center;
-    /align-items: center;
-    /min-height: 96px;
     background-color: rgba(181,181,181,0.2);
     width: 600px;
     padding: 0;

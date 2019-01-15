@@ -52,7 +52,7 @@
     <!-- MAIN- -->
 
     <main class="main">
-    <div class="landing-block centering">
+    <div class="landing-block centering" aria-label="Слайдер по группам товара">
         <div class="landing-point  materials">
             <h3>Материалы</h3>
             <p><a class="point-info  materials-info" href="#">На любой вкус</a></p>
@@ -97,7 +97,7 @@
 
     <section class="popular-goods centering">
         <div class="header-popular-goods">
-            <h2>Популярные товары:</h2>
+            <h2 aria-label="Популярные товары:">Популярные товары:</h2>
             <a class="btn  btn-goods" href="catalog.html">Все популярные товары</a>
         </div>
         <div class="catalog">
@@ -167,7 +167,7 @@
   </section>
   <section class="popular-manufacturers centering">
       <div class="header-popular-manufacturers">
-          <h2>Популярные производители:</h2>
+          <h2 aria-label="Популярные производители:">Популярные производители:</h2>
           <a class="btn  btn-manufacturers" href="#">Все производители</a>
       </div>
       <div class="manufacturers-list">
@@ -185,7 +185,7 @@
   <section class="service">
     <div class="container centering">
       <div class="wrapper">
-        <h2>Сервисы</h2>
+        <h2 aria-label="Сервисы">Сервисы</h2>
         <p class="service-header">Хороший интернет-магазин отличается от плохого не только ценами!
         <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
@@ -243,7 +243,7 @@
             <a class="batton  batton-about-company" href="#">Подробнее о компании</a>
           </section>
           <section class="contacts">
-            <h2>Контакты</h2>
+            <h2 aria-label="Контакты">Контакты</h2>
             <p>Вы можете забрать товар сами,
               <br>заехав в наш офис:</p>
             <a class="map contacts-button-map" href="#"><img src="img/map_small.jpg" width="300" height="158" alt="Карта"></a>
@@ -386,10 +386,14 @@
       }
     }
   });
+
+  /*-----------------------*/
+
   var mapLink = document.querySelector(".contacts-button-map");
 
   var mapPopup = document.querySelector(".modal-map");
   var mapClose = mapPopup.querySelector(".modal-close");
+
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
@@ -399,10 +403,10 @@
     evt.preventDefault();
     mapPopup.classList.remove("modal-show");
   });
-
+/**/
   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === 27) {
+      evt.preventDefault();
       if (mapPopup.classList.contains("modal-show")) {
         mapPopup.classList.remove("modal-show");
       }

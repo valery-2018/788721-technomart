@@ -308,7 +308,7 @@ a {
     padding-bottom: 39px;
     /*padding-right: 20px;*/
     margin-right: 70px;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .header-middle .phone-address {
     list-style: none;
@@ -318,7 +318,7 @@ a {
     min-width: 270px;
     flex-direction: column;
     align-items: center;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     margin-right: 0px;
 }
 .header-middle .phone {
@@ -366,7 +366,7 @@ a {
     display: flex;
     padding-top: 45px;
     padding-left: 69px;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     margin-left: 0 auto;
     min-width: 282px;
 }
@@ -928,6 +928,10 @@ a {
 	font-weight: 400;
     color: #32425c;
 }
+.service .service-header {
+  display: flex;
+  width: 400px;
+}
 
 .company-contacts {
     margin-bottom: 87px;
@@ -971,7 +975,18 @@ a {
     padding: 0;
     margin-bottom: 0px;
 }
-
+.company .real-shopping {
+  display: flex;
+  width: 520px;
+}
+.company .delivery-goods {
+  display: flex;
+  width: 390px;
+}
+.contacts .goods-themselves {
+  display: flex;
+  width: 178px;
+}
 .company ul {
     list-style: none;
     margin: 0;
@@ -1109,6 +1124,7 @@ a {
 }
 .footer-middle .address {
     display: flex;
+    width: 328px;
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     text-transform: none;
     font-family: "Cuprum", Arial, sans-serif;
@@ -1161,6 +1177,7 @@ a {
 }
 .footer-bottom .copyright-company {
     display: flex;
+    width: 230px;
     margin-top: 38px;
     margin-bottom: 28px;
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
@@ -1219,16 +1236,20 @@ a {
     background-color: #293349;
 }
 
+.copyright-email {
+    display: flex;
+    width: 138px;
+    margin-top: 38px;
+    margin-bottom: 28px;
+    margin-right: 0px;
+}
 .copyright-developer {
+    display: flex;
+    width: 98px;
     margin-left: 54px;
     margin-top: 38px;
     margin-bottom: 28px;
     margin-right: 14px;
-}
-.copyright-email {
-    margin-top: 38px;
-    margin-bottom: 28px;
-    margin-right: 0px;
 }
 .copyright-email .e-mail,
 .copyright-developer .developer {
@@ -1251,7 +1272,7 @@ a {
 .client-account {
     display: flex;
     flex-direction: column;
-    outline: 2px solid blue;/*визуализатор блоков 3-й уровень*/
+    /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     margin: 0 auto;
     min-width: 300px;
     padding-left: 0px;

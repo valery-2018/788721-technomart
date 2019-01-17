@@ -16,7 +16,7 @@
          <div class="header-top centering">
             <a class="logo header-logo" href="">Техномарт</a>
             <form class="search" action="https://echo.htmlacademy.ru">
-                <input class="input-search" style="height:40px; width:220px" type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
+                <input class="input-search" type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
                 <label for="search-field"></label>
             </form>
             <a class="bookmarks" href="#">Закладки: 0</a>
@@ -73,8 +73,8 @@
         <div class="slider-container">
             <figure class="slider slider-drill">
                 <img src="img/workman_1.jpg" width="620" height="266" alt="Дрели">
-                <a id="next" class="forward"></a>
-                <a id="previous" class="back"></a>
+                <button class="forward" type="button" aria-label="Следующий слайд"></button>
+                <button class="back" type="button" aria-label="Предыдущий слайд"></button>
             </figure>
             <figure class="slider slider-perforator">
                 <img src="img/workman_2.jpg" width="620" height="266" alt="Перфораторы">
@@ -113,11 +113,11 @@
               <div class="image">
                 <img src="img/perforator_9000.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 9000">
               </div>
-              <a class="card-title" href="#">
-                  <h3>Перфоратор BOSCH BFG 9000</h3>
+              <div class="card-title">
+                  <a href="#"><h3>Перфоратор BOSCH BFG 9000</h3></a>
                   <b class="old-price">32500 Р.</b>
-                  <b class="new-price">25500 Р.</b>
-              </a>
+                  <a href="#"><b class="new-price">25500 Р.</b></a>
+              </div>
             </li>
 
             <li class="catalog-card-index">
@@ -128,11 +128,11 @@
               <div class="image">
                 <img src="img/perforator_3000.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 3000">
               </div>
-              <a class="card-title" href="#">
-                  <h3>Перфоратор BOSCH BFG 3000</h3>
+              <div class="card-title">
+                  <a href="#"><h3>Перфоратор BOSCH BFG 3000</h3>
                   <b class="old-price">22500 Р.</b>
-                  <b class="new-price">15500 Р.</b>
-              </a>
+                  <a href="#"><b class="new-price">15500 Р.</b>
+              </div>
             </li>
 
             <li class="catalog-card-index">
@@ -143,11 +143,11 @@
               <div class="image">
                 <img src="img/perforator_6000.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 6000">
               </div>
-              <a class="card-title" href="#">
-                  <h3>Перфоратор BOSCH BFG 6000</h3>
+              <div class="card-title">
+                  <a href="#"><h3>Перфоратор BOSCH BFG 6000</h3></a>
                   <b class="old-price">30500 Р.</b>
-                  <b class="new-price">25500 Р.</b>
-              </a>
+                  <a href="#"><b class="new-price">25500 Р.</b></a>
+              </div>
             </li>
 
             <li class="catalog-card-index">
@@ -159,11 +159,11 @@
               <div class="image">
                 <img src="img/perforator_2000.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 2000">
               </div>
-              <a class="card-title" href="#">
-                  <h3>Перфоратор BOSCH BFG 2000</h3>
+              <div class="card-title">
+                  <a href="#"><h3>Перфоратор BOSCH BFG 2000</h3></a>
                   <b class="old-price"></b>
-                  <b class="new-price">12500 Р.</b>
-              </a>
+                  <a href="#"><b class="new-price">12500 Р.</b></a>
+              </div>
             </li>
         </ul>
     </div>
@@ -276,8 +276,7 @@
 
       <div class="footer-middle">
         <div class="footer-middle-flex centering">
-                <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                +7 (812) 555-05-55</p>
+                <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
           <nav class="navi footer-navi-middle">
             <ul class="navi-middle">
                 <li><a href="index.html">Материалы</a></li>

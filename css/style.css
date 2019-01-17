@@ -307,9 +307,9 @@ a {
     font-style: italic;
     color: #ee3643;
     font-weight: 400;
-    padding-top: 49px;
+    padding-top: 50px;
     padding-left: 51px;
-    padding-bottom: 39px;
+    padding-bottom: 40px;
     /*padding-right: 20px;*/
     margin-right: 70px;
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
@@ -597,7 +597,7 @@ a {
 	position: absolute;
 	top: 207px;
 	right: 401px;
-    padding: 10px 47px;
+  padding: 10px 47px;
 }
 .btn:hover {
 	background-color: #ca2c37;
@@ -606,30 +606,30 @@ a {
 	background-color: #ba2732;
 }
 .landing-point h3 {
-    font-size: 24px;
-    line-height: 30px;
-    color: #ffffff;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-weight: bold;
-    margin-top: 21px;
-	margin-bottom: -6px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 21px;
+	margin-bottom: -5px;
 	padding-left: 21px;
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 .point-info {
 	display: inline-block;
-    font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
-    color: #ffffff;
+  color: #ffffff;
 	text-transform: uppercase;
-    text-align: center;
+  text-align: center;
 	min-width: 135px;
 	padding: 10px 0;
 	margin-left: 23px;
-    margin-top: 0px;
+  margin-top: 0px;
 	border-radius: 4px;
-    background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.1);
 }
 .point-info:hover {
     background-color: rgba(0,0,0,0.2);
@@ -681,7 +681,7 @@ a {
 	align-items: center;
 	padding-left: 25px;
 	padding-right: 25px;
-	margin-bottom: 19px;
+	margin-bottom: 20px;
 }
 
 .header-popular-goods h2,
@@ -778,7 +778,7 @@ a {
 }
 .service {
 	background-color: #f4f8fa;
-	margin-bottom: 80px;
+	margin-bottom: 82px;
 }
 .service h2 {
     text-transform: uppercase;
@@ -926,7 +926,7 @@ a {
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom:5px;
+    margin-bottom:0px;
 }
 .contacts h2 {
     text-transform: uppercase;

@@ -17,7 +17,7 @@
                     <label for="search-field"></label>
                 </form>
                 <a class="bookmarks" href="#">Закладки: 0</a>
-                <a class="basket" href="#">Корзина: 0</a>
+                <a class="basket-not-empty" href="#">Корзина: 10</a>
                 <a class="button button-order" href="#">Оформить заказ</a>
             </div>
         </div>
@@ -32,7 +32,7 @@
           <div class="client-account">
             <div class="client-account-login">
                 <a class="client-name" href="#">Равшан Джамшутович</a>
-                <a class="icon-exit" href="#"></a>
+                <a class="icon-exit" href="#" aria-label="Выйти"></a>
             </div>
             <ul class="order-and-account">
                 <li><a class="btn-order" href="#" >Мои заказы</a></li>
@@ -83,8 +83,8 @@
                 <a href="#">По функционалу</a>
             </div>
             <div class="arrows">
-                <a class="arrow-up active" href="#"></a>
-                <a class="arrow-down" href="#"></a>
+                <a class="arrow-up active" href="#" aria-label="Вверх"></a>
+                <a class="arrow-down" href="#" aria-label="Вниз"></a>
             </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
           <div class="price-range">
               <div class="origin">0</div>
               <div class="dash">—</div>
-              <output name="maximumpriceoutput"></output>
+              <output name="maximumpriceoutput"><div class="thirty-thousand"></div></output>
           </div>
         </form>
         <div class="line"></div>

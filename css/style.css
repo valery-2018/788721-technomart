@@ -301,7 +301,6 @@ a {
     padding-top: 45px;
     padding-left: 69px;
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
-    margin-left: 0 auto;
     min-width: 282px;
 }
 .client-navi .button-enter {
@@ -916,7 +915,7 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: -10px;
+    margin-top: -12px;
 }
 .company li {
     text-transform: none;
@@ -925,7 +924,7 @@ a {
     line-height: 40px;
     color: #000000;
     padding-left: 36px;
-    padding-top: -6px;
+    padding-top: 0px;
     margin-top: 0px;
     position: relative;
 }
@@ -1088,7 +1087,6 @@ a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
-    text-align: bottom;
     color:#ffd180;
     background-color: #31415b;
     text-align: right;
@@ -1120,7 +1118,6 @@ a {
     display: flex;
     box-sizing: border-box;
     padding-left: 8px;
-    justifu-content: center;
     margin: 0;
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     margin-top: 35px;
@@ -1353,9 +1350,6 @@ a {
     color: #c5c5c5;
 }
 
-/.header {
-    margin-bottom: 20px;
-}
 .breadcrumbs {
     list-style: none;
     padding: 0;
@@ -1363,7 +1357,6 @@ a {
     display: flex;
     margin-top: 20px;
     margin-bottom: 21px;
-
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 
@@ -1639,7 +1632,6 @@ input[type=range]::-webkit-slider-runnable-track {
     width:  170px;
     height: 2px;
     cursor: pointer;
-    animate: 0.2s;
     background: #00ca74;
     border-radius: 0px;
     border: 0.2px solid #00ca74;
@@ -1664,7 +1656,6 @@ input[type=range]::-moz-range-track {
     width: 170px;
     height: 2px;
     cursor: pointer;
-    animate: 0.2s;
     background: #2a6495;
     border-radius: 0px;
     border: 0.2px solid #00ca74;
@@ -1684,7 +1675,6 @@ input[type=range]::-ms-track {
     width: 170px;
     height: 2px;
     cursor: pointer;
-    animate: 0.2s;
     background: transparent;
     border-color: transparent;
     border-width: 20px ;
@@ -1732,15 +1722,13 @@ input[type=range]:focus {
 /*----------- Выбираем цену -----------*/
 .price-range {
     width: 220px;
+    position: relative;
     display: flex;
     justify-content: space-between;
-    /margin-top: 10px;
-    /padding: 10px;
     /*background: rgba(0, 128, 0, 0.2);
     box-shadow: 0 0 0 3px green;*/
 }
 .origin,output {
-    position: relative;
     width: 94px;
     text-align: center;
     background: #f7f2ec;
@@ -1757,12 +1745,16 @@ input[type=range]:focus {
     /*background: rgba(0, 128, 0, 0.2);
     box-shadow: 0 0 0 3px green;*/
 }
-output::before {
+.price-range::before {
     position: absolute;
     content: "30000";
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    font-family: "PT Sans", Arial, sans-serif;
 
-    top: 9px;
-    left: 24px;
+    top: 10px;
+    left: 150px;
 }
 
 .dash {
@@ -2423,7 +2415,7 @@ output::before {
     color: #ffffff;
     background-color: #ed3543;
     border-radius: 3px;
-    marging-top: 32px;
+    outline: none;
     border: none;
 }
 .btn-send:hover,

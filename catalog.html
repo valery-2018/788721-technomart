@@ -12,10 +12,12 @@
       <div class="wrapper-header-top">
         <div class="header-top centering">
           <a class="logo header-logo" href="index.html">Техномарт</a>
-          <form class="search" action="https://echo.htmlacademy.ru">
-            <input class="input-search" type="text" name="search" id="search-field" placeholder="Поиск:">
-            <label for="search-field"><span class="visually-hidden">Поиск по сайту</span></label>
-          </form>
+          <div class="search">
+            <form action="https://echo.htmlacademy.ru/" >
+              <input class="input-search" type="search" name="search" id="search-field" placeholder="Поиск:">
+              <label class="search-label" for="search-field"></label>
+            </form>
+          </div>
           <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="basket-not-empty" href="#">Корзина: 10</a>
           <a class="button button-order" href="#">Оформить заказ</a>
@@ -105,7 +107,7 @@
             <div class="price-range">
               <div class="origin">0</div>
               <div class="dash">—</div>
-              <output name="maximumpriceoutput"><div class="thirty-thousand"></div></output>
+              <output name="maximumpriceoutput"></output>
             </div>
           </form>
           <div class="line"></div>

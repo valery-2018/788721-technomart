@@ -238,10 +238,11 @@ a {
     font-style: italic;
     color: #ee3643;
     font-weight: 400;
-    padding-top: 48px;
+    padding-top: 49px;
     padding-left: 51px;
     padding-bottom: 40px;
-    margin-right: 70px;
+    margin-right: 71px;
+
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .header-middle .phone-address {
@@ -252,6 +253,7 @@ a {
     min-width: 270px;
     flex-direction: column;
     align-items: center;
+    padding-top: 46px;
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
     margin-right: 0px;
 }
@@ -267,8 +269,8 @@ a {
     font-weight: 400;
     border: 3px solid #ffffff;
     padding: 7px 50px 7px 71px;
-    margin-top: 43px;
-    margin-bottom: -5px;
+    /margin-top: 43px;
+    margin-bottom: -7px;
     white-space: nowrap;
 }
 .phone::before {
@@ -377,7 +379,7 @@ a {
     margin: 0;
     padding: 0;
     max-width: 940px;
-    margin-bottom: 64px;
+    margin-bottom: 65px;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
@@ -2232,16 +2234,16 @@ input[type=range]:focus {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
-    margin-top: 63px;
-    margin-bottom: 15px;
+    margin-top: 64px;
+    margin-bottom: 12px;
 
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
 .info-about-perforators p {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
-    line-height: 23px;
-    margin-bottom: 72px;
+    line-height: 24px;
+    margin-bottom: 71px;
 }
 
 /*Всплывающие окна*/
@@ -2251,10 +2253,10 @@ input[type=range]:focus {
     width: 940px;
     height: 443px;
 
-    bottom: 170px;
     left: 50%;
+    top:50%;
     margin-left: -470px;
-
+    margin-top: -222px;
     box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
 }
@@ -2323,18 +2325,12 @@ input[type=range]:focus {
     justify-content: center;
     position: fixed;
 
-
-
-    /bottom: 190px;
-    /position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /margin-left: -300px;
+    margin-left: -300px;
+    margin-top: -186px;
 
     width: 600px;
-    padding-top: 50px;
-
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5),0 -6px 0 0 #ed3543;
     background-color: white;
     z-index: 100;

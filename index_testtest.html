@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style_testtest.css" rel="stylesheet" type="text/css" >
+  </head>
+ <body>
+    <!-- <div class="fixed-overlay"> -->
+        <!-- <div class="modal"> -->
+            <!-- <div class="modal_container">kkkkkkkkkk</div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+
+     <a class="map contacts-button-map" href="#"><img src="img/map_small.jpg" width="300" height="158" alt="Карта"></a>
+     <a class="batton  batton-email" href="#">Заблудились? Напишите нам!</a>
+
+     <div class="modal modal-map">
+       <div class="modal-container">
+            <img src="img/map-big.jpg" width="940" height="443" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+       <button class="btn-close modal-close" type="button" aria-label="Закрыть"></button>
+       </div>
+     </div>
+
+     <div class="modal write-us">
+       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+         <div class="name-email">
+           <p class="data-and-letter">
+             <label for="name">Ваше имя:</label>
+             <input id="name" type="text" name="myname" value="" placeholder="Имя Фамилия">
+           </p>
+           <p class="data-and-letter">
+             <label for="e-mail">Ваш e-mail:</label>
+             <input id="e-mail" type="email" name="email" value="" placeholder="e-mail@example.com">
+           </p>
+         </div>
+         <div class="data-and-letter mail">
+           <label for="client-text">Текст письма:</label>
+           <textarea id="client-text" name="client-text" rows="5" cols="30" placeholder="В свободной форме" required=""></textarea>
+         </div>
+         <div class="send-write-us">
+           <button class="button btn-send" type="submit" name="submit" aria-label="Отправить">Отправить</button>
+         </div>
+       </form>
+       <button class="btn-close write-us-close" type="button" aria-label="Закрыть"></button>
+     </div>
+  <script async src="js/script_min.js"></script>
+ </body>
+</html>

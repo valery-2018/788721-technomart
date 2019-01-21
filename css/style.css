@@ -238,7 +238,7 @@ a {
     font-style: italic;
     color: #ee3643;
     font-weight: 400;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-left: 51px;
     padding-bottom: 40px;
     margin-right: 70px;
@@ -267,7 +267,7 @@ a {
     font-weight: 400;
     border: 3px solid #ffffff;
     padding: 7px 50px 7px 71px;
-    margin-top: 46px;
+    margin-top: 43px;
     margin-bottom: -5px;
     white-space: nowrap;
 }
@@ -794,21 +794,20 @@ a {
     height: 251px;
     left: 202px;
     top: 41px;
-    background-image: url('../img/car-shadow.png');
+    background-image: url("../img/car-shadow.png");
     background-repeat: no-repeat;
 }
 .slide-guarantee {
     display: none;
 }
 .slide-guarantee:after {
-    display: none;
     position: absolute;
     content: "";
     width: 468px;
     height: 251px;
-    left: 200px;
+    left: 260px;
     top: 45px;
-    background-image: url('../img/guarantee-shadow.png');
+    background-image: url("../img/guarantee-shadow.png");
     background-repeat: no-repeat;
 }
 .slide-credit {
@@ -821,7 +820,7 @@ a {
     height: 251px;
     left: 200px;
     top: 45px;
-    background-image: url('../img/credit-shadow.png');
+    background-image: url("../img/credit-shadow.png");
     background-repeat: no-repeat;
 }
 
@@ -856,7 +855,15 @@ a {
     display: flex;
     width: 400px;
 }
-
+.service .service-delivery {
+    white-space: pre;
+}
+.service .service-guarantee {
+    white-space: pre;
+}
+.service .service-credit {
+    white-space: pre;
+}
 .company-contacts {
     margin-bottom: 87px;
     display: flex;

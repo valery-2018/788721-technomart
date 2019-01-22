@@ -139,7 +139,7 @@ a {
 .header-top .basket,
 .header-top .basket-not-empty {
     padding-top: 12px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
     padding-left: 18px;
     width: 148px;
     text-align: center;
@@ -148,6 +148,7 @@ a {
     line-height: 18px;
     color: #ffffff;
 }
+
 .header-top .basket-not-empty {/*catalog*/
     background-color: #ed3543;
 }
@@ -176,7 +177,7 @@ a {
 
     position: absolute;
     top: 12px;
-    left:17px;
+    left:19px;
 
     width: 14px;
     height: 16px;
@@ -209,9 +210,9 @@ a {
 }
 
 .header-top .button-order {
-    width: 167px;
+    width: 168px;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 12px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
@@ -379,7 +380,7 @@ a {
     margin: 0;
     padding: 0;
     max-width: 940px;
-    margin-bottom: 65px;
+    margin-bottom: 63px;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
@@ -422,7 +423,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 59px;
     margin-bottom: 50px;
 }
 .landing-point {
@@ -653,7 +654,7 @@ a {
     display: flex;
     /justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
 }
 .manufacturer:not(:nth-of-type(4n))  {
     margin-right: 22px;
@@ -678,9 +679,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 145px;
+    min-height: 143px;
     width: 218px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     line-height: 20px;
     text-align: center;
     box-sizing: border-box;
@@ -743,6 +744,7 @@ a {
 .service-slider {
     display: flex;
     justify-content: flex-start;
+    margin-top: -1px;
 }
 .slide-storage {
     margin-left: 28px;
@@ -755,7 +757,7 @@ a {
 }
 .slide-storage  p {
     padding-left: 52px;
-    padding-top: 23px;
+    padding-top: 25px;
 }
 .service-slider-button {
     width: 198px;
@@ -772,7 +774,7 @@ a {
     list-style: none;
     padding-left: 0;
     margin-top: 18px;
-    margin-bottom: 100px;
+    margin-bottom: 99px;
     position: relative;
 }
 
@@ -882,7 +884,7 @@ a {
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom:0px;
+    margin-bottom:3px;
 }
 .contacts h2 {
     text-transform: uppercase;
@@ -893,7 +895,7 @@ a {
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom:5px;
+    margin-bottom:8px;
 }
 .company p,
 .contacts p {
@@ -978,7 +980,7 @@ a {
     width: 300px;
 }
 .map {
-    margin-top: 15px;
+    margin-top: 14px;
     margin-bottom: 15px;
 }
 
@@ -1364,7 +1366,7 @@ a {
     padding: 0;
     margin: 0;
     display: flex;
-    margin-top: 20px;
+    margin-top: 21px;
     margin-bottom: 21px;
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
@@ -1415,8 +1417,11 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.breadcrumbs li:not(:first-of-type):before {
+
+}
 .breadcrumbs li:nth-of-type(2) {
-    margin-left: 55px;
+    margin-left: 54px;
 }
 
 .perforatory {
@@ -1427,7 +1432,7 @@ a {
     line-height: 30px;
     font-weight: 400;
     margin-left: 28px;
-    margin-top: 30px;
+    margin-top: 28px;
     margin-bottom: 30px;
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
 }
@@ -1521,8 +1526,8 @@ a {
     border-right: 6px solid #f7f2ec;
     border-bottom: 10px solid #c5c5c5;
     position: absolute;
-    bottom: 14px;
-    left: 14px;
+    margin-top: 2px;
+    margin-left: 2px;
 }
 .arrow-down {
     border-top: 10px solid #c5c5c5;
@@ -1531,7 +1536,7 @@ a {
     border-bottom: none;
     position: absolute;
     top: 14px;
-    left: 46px;
+    left: 48px;
 }
 .arrow-up:hover {
     border-top: none;
@@ -1549,7 +1554,7 @@ a {
     border-bottom: none;
     position: absolute;
     top: 14px;
-    left: 46px;
+    left: 48px;
 }
 .arrow-up:active {
     border-top: none;
@@ -1796,7 +1801,7 @@ input[type=range]:focus {
 .line {
     width: 220px;
     border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 .fieldset:last-of-type {
     margin-bottom: 53px;
@@ -1808,7 +1813,8 @@ input[type=range]:focus {
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+    margin-left: -2px;
 }
 .label {
     text-transform: uppercase;
@@ -2173,7 +2179,7 @@ input[type=range]:focus {
     list-style: none;
     padding-left: 240px;
     padding-top: 11px;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
 }
 
 .pagination-item {
@@ -2234,7 +2240,7 @@ input[type=range]:focus {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
-    margin-top: 64px;
+    margin-top: 66px;
     margin-bottom: 12px;
 
     /*outline: 2px solid blue;визуализатор блоков 3-й уровень*/
@@ -2243,7 +2249,7 @@ input[type=range]:focus {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 71px;
+    margin-bottom: 68px;
 }
 
 /*Всплывающие окна*/
@@ -2259,6 +2265,7 @@ input[type=range]:focus {
     margin-top: -222px;
     box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
+    z-index: 100;
 }
 
 .btn-close {

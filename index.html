@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/style_min.css" rel="stylesheet" type="text/css" >
   </head>
   <body>
 
@@ -109,7 +109,7 @@
           <ul class="catalog-list-index">
             <li class="catalog-card-index">
               <div class="active">
-                <a href="#" class="buy">Купить</a>
+                <a href="buy_finish.html#buy-finish" class="buy">Купить</a>
                 <a href="#" class="in-bookmark">В закладки</a>
               </div>
               <div class="image">
@@ -124,7 +124,7 @@
 
             <li class="catalog-card-index">
               <div class="active">
-                <a href="#" class="buy">Купить</a>
+                <a href="buy_finish.html#buy-finish" class="buy">Купить</a>
                 <a href="#" class="in-bookmark">В закладки</a>
               </div>
               <div class="image">
@@ -139,7 +139,7 @@
 
             <li class="catalog-card-index">
               <div class="active">
-                <a href="#" class="buy">Купить</a>
+                <a href="buy_finish.html#buy-finish" class="buy">Купить</a>
                 <a href="#" class="in-bookmark">В закладки</a>
               </div>
               <div class="image">
@@ -155,7 +155,7 @@
             <li class="catalog-card-index">
               <div class="flag flag-new">новинка</div>
               <div class="active">
-                <a href="#" class="buy">Купить</a>
+                <a href="buy_finish.html#buy-finish" class="buy">Купить</a>
                 <a href="#" class="in-bookmark">В закладки</a>
               </div>
               <div class="image">
@@ -250,8 +250,8 @@
             <h2 aria-label="Контакты">Контакты</h2>
             <p class="goods-themselves">Вы можете забрать товар сами,
               заехав в наш офис:</p>
-            <a class="map contacts-button-map" href="#"><img src="img/map_small.jpg" width="300" height="158" alt="Карта"></a>
-            <a class="batton  batton-email" href="#">Заблудились? Напишите нам!</a>
+            <a class="map contacts-button-map" href="modal_map.html#map"><img src="img/map_small.jpg" width="300" height="158" alt="Карта"></a>
+            <a class="batton  batton-email" href="modal_writeus.html#write-us">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -310,12 +310,13 @@
     </footer>
 
     <!--Всплывающие окна  -->
-
+    <!-- <a name="map"></a> -->
     <div class="modal modal-map">
       <img src="img/map-big.jpg" width="940" height="443" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <button class="btn-close modal-close" type="button" aria-label="Закрыть"></button>
     </div>
 
+    <!-- <a name="write-us"></a> -->
     <div class="modal write-us">
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="name-email">
